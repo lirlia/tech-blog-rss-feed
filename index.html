@@ -1,0 +1,660 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" 
+content="企業のテックブログの更新をまとめたRSSフィードを配信しています。記事を読んでその企業の技術・カルチャーを知れることや、質の高い技術情報を得られることを目的としています。"><meta name="author" content="yamadashy"><meta name="robots" content="index, follow"><meta 
+property="og:url" content="https://yamadashy.github.io/tech-blog-rss-feed/"><meta property="og:title" content="企業テックブログRSS"><meta property="og:image" 
+content="https://yamadashy.github.io/tech-blog-rss-feed/images/ogp.png"><meta property="og:description" content="企業のテックブログの更新をまとめたRSSフィードを配信しています。記事を読んでその企業の技術・カルチャーを知れることや、質の高い技術情報を得られることを目的としています。">
+<meta property="og:type" content="website"><meta property="og:site_name" content="企業テックブログRSS"><meta name="google-site-verification" content="GPLvXv8kYtLMW912ZS54DKFEZL6ruOrjOFLdHVTo37o"><link 
+rel="shortcut icon" href="images/favicon.ico"><link rel="apple-touch-icon" href="images/apple-icon.png"><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="feeds/atom.xml"><link 
+rel="alternate" type="application/rss+xml" title="RSS2.0" href="feeds/rss.xml"><link rel="alternate" type="application/json" href="feeds/feed.json"><style>
+*,::after,::before{box-sizing:border-box}*{margin:0}body,html{height:100%}body{line-height:1.5;-webkit-font-smoothing:antialiased}canvas,img,picture,svg,video{display:block;max-width:100%}button,input,select,textarea{font:inherit}h1,h2,h3,h4,h5,h6,p{overflow-wrap:break-word}#__next,#root{isolation:isolate}:root{--ui-color-brand:#353535;--ui-color-n-000:#fff;--ui-color-n-100:#ebebeb;--ui-color-n-300:#aeaeae;--ui-color-n-500:#353535;--ui-color-n-700:#282828;--ui-color-n-900:#1a1a1a;--ui-color-background-primary:var(--ui-color-n-000);--ui-color-form-input:var(--ui-color-n-100);--ui-color-typography-heading:var(--ui-color-n-500);--ui-color-typography-body:var(--ui-color-n-900);--ui-color-typography-note:var(--ui-color-n-300);--ui-color-typography-button:var(--ui-color-n-000);--ui-typography-typeface:"Inter",sans-serif;--ui-typography-h1:1.9375rem;--ui-typography-h2:1.5625rem;--ui-typography-h3:1.25rem;--ui-typography-p:1rem;--ui-typography-s:.8125rem;--ui-typography-h1-leading:1.2;--ui-typography-h2-leading:1.2;--ui-typography-h3-leading:1.25;--ui-typography-p-leading:1.5;--ui-typography-margin-heading:.75rem;--ui-typography-margin-body:1.125rem;--ui-layout-container:1.25rem;--ui-layout-grid:3.625rem;--ui-layout-gutter:1rem;--ui-gap-cta:.75rem;--ui-gap-content:2rem;--ui-radius-button:5rem;--ui-radius-input:5rem}html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}body{background-color:var(--ui-color-background-primary);color:var(--ui-color-typography-body);font-family:var(--ui-typography-typeface);font-feature-settings:"liga","kern";font-size:var(--ui-typography-p);font-weight:400;line-height:var(--ui-typography-p-leading);margin:0 auto;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}a{color:var(--ui-color-brand);text-decoration:none}h1,h2,h3,p{margin-top:0}h1,h2,h3{color:var(--ui-color-typography-heading);margin-bottom:var(--ui-typography-margin-heading)}h1{font-size:var(--ui-typography-h1);line-height:var(--ui-typography-h1-leading)}h2{font-size:var(--ui-typography-h2);line-height:var(--ui-typography-h2-leading)}h3{font-size:var(--ui-typography-h3);line-height:var(--ui-typography-h3-leading)}p{margin-bottom:var(--ui-typography-margin-body)}p:last-child{margin-bottom:0}strong{font-weight:700}small{font-size:var(--ui-typography-s)}.ui-text-note{color:var(--ui-color-typography-note);line-height:1}img,svg{display:block;height:auto;margin:0 auto;max-width:100%}.ui-layout-container{padding-left:var(--ui-layout-container);padding-right:var(--ui-layout-container)}.ui-layout-flex,.ui-layout-grid{align-items:center;justify-content:center}.ui-layout-flex{display:flex}.ui-layout-grid{display:grid}.ui-component-cta{flex-direction:column;row-gap:var(--ui-gap-cta)}button,input{color:inherit;font-family:inherit;font-size:var(--ui-typography-p);line-height:1;margin:0;outline:0;text-rendering:inherit;text-transform:none}form{width:100%}.ui-component-form{background-color:var(--ui-color-form-input);border-radius:var(--ui-radius-input);grid-template-columns:minmax(0,1fr) auto;padding:.25rem}::placeholder{color:var(--ui-color-typography-note)}.ui-component-input{background-color:var(--ui-color-form-input);border:.0625rem solid var(--ui-color-form-input);border-radius:var(--ui-radius-input)}.ui-component-input-medium{height:2.5rem;padding:.625rem 1rem .75rem}button{background:0 0;border:0;cursor:pointer;display:block;padding:0}.ui-component-button{border:.0625rem solid var(--ui-color-brand);border-radius:var(--ui-radius-button);display:block;font-weight:700;line-height:1;text-align:center}.ui-component-button-primary{background-color:var(--ui-color-brand);color:var(--ui-color-typography-button)}.ui-component-button-medium{padding:.625rem .875rem .75rem;width:fit-content}.ui-section-header{padding-bottom:1.25rem;padding-top:1.25rem}.ui-section-header__layout{justify-content:space-between}.ui-section-content{padding-bottom:2em;padding-top:5rem;text-align:center}.ui-section-content--image{margin-bottom:var(--ui-gap-content);margin-top:var(--ui-gap-content)}.ui-section-content--feature{row-gap:var(--ui-gap-content)}.ui-section-content--icon{margin-bottom:1rem}.ui-section-close{padding-bottom:5rem;padding-top:5rem;text-align:center}.ui-section-footer{padding-bottom:1.25rem;padding-top:1.25rem}.ui-section-footer__layout{column-gap:var(--ui-layout-gutter)}.ui-section-footer--copyright{margin-bottom:0;margin-right:auto}@media screen and (min-width:48rem){:root{--ui-typography-h1:2.1875rem;--ui-typography-h2:1.75rem;--ui-typography-h3:1.4375rem;--ui-typography-p:1.125rem;--ui-typography-s:.875rem;--ui-typography-margin-body:1.25rem;--ui-layout-container:4.25rem;--ui-layout-gutter:1.5rem;--ui-gap-content:3rem}.ui-layout-column-center,.ui-layout-container{margin-left:auto;margin-right:auto}.ui-layout-grid-3{column-gap:var(--ui-layout-gutter);grid-template-columns:repeat(2,1fr);justify-items:center}.ui-layout-grid-3 div:last-of-type{left:calc(50% + (var(--ui-layout-gutter)/ 2));position:relative}.ui-layout-column-4{width:calc((var(--ui-layout-grid) * 4) + (var(--ui-layout-gutter) * 3))}.ui-layout-column-6{width:calc((var(--ui-layout-grid) * 6) + (var(--ui-layout-gutter) * 5))}.ui-section-header{padding-bottom:2rem;padding-top:2rem}.ui-section-content{padding-bottom:3rem}.ui-section-content--icon{height:4rem;width:4rem}.ui-section-footer{padding-bottom:2rem;padding-top:2rem}}@media screen and (min-width:64rem){:root{--ui-layout-container:0}a{transition:all 250ms ease}a:not(.ui-component-button):hover{color:var(--ui-color-typography-body)}.ui-layout-container{width:60rem}.ui-layout-grid-3{grid-template-columns:repeat(3,1fr)}.ui-layout-grid-3 div:last-of-type{position:static}}@media screen and (min-width:75rem){:root{--ui-typography-h1:2.75rem;--ui-typography-h2:2.1875rem;--ui-typography-h3:1.75rem;--ui-typography-h4:1.4375rem;--ui-typography-margin-heading:1rem;--ui-typography-margin-body:1.75rem;--ui-layout-grid:4rem;--ui-layout-gutter:2rem;--ui-gap-content:4rem}.ui-text-intro{font-size:var(--ui-typography-h4)}.ui-layout-container{width:70rem}.ui-section-header{padding-bottom:3rem;padding-top:3rem}.ui-section-content{padding-bottom:5rem;padding-top:7.5rem}.ui-section-content--icon{height:5rem;margin-bottom:1.125rem;width:5rem}.ui-section-close{padding-bottom:7.5rem;padding-top:7.5rem}.ui-section-footer{padding-bottom:3rem;padding-top:3rem}}:root{--base-background:#fff;--base-color:#333;--base-color-lighter:#777;--base-color-muted:#999;--yellow-background:#fff9c4;--yellow-background-lighter:#fffde7;--orange-background-dark:#ff9800;--orange-background-dark-active:#fb8c00;--base-font:-apple-system,BlinkMacSystemFont,Helvetica Neue,Yu Gothic,YuGothic,Verdana,Meiryo,M+ 1p,sans-serif;--ui-gap-content:2em}.ui-text-note{color:var(--base-color-muted)}.ui-section-header__layout img{display:inline-block;width:24px;height:24px;vertical-align:middle}.ui-section-content{padding-top:2.5em;padding-bottom:3.5rem}.ui-section-header{padding-top:2rem;padding-bottom:1rem}.ui-component-form{border-radius:0;grid-template-columns:auto minmax(0,1fr) auto}.ui-component-form .ui-component-button{border-radius:0;background:var(--orange-background-dark);border-color:var(--orange-background-dark)}.ui-component-form .ui-component-button.active{background:var(--orange-background-dark-active);border-color:var(--orange-background-dark-active)}.ui-typography-heading{text-align:left}.ui-section-header__layout .ui-section-header__title{display:inline-block;line-height:22px;vertical-align:middle;font-weight:700;font-size:1.3em;color:var(--base-color)}.ui-component-form__label{margin-left:.2em}.ui-component-form__label img{width:32px;height:32px}.ui-component-form__label span{font-weight:700}.ui-section-feed{background:var(--yellow-background-lighter)}.ui-section-feed .ui-layout-grid{align-items:flex-start}.ui-container-feed{text-align:left;margin-top:2em}.ui-feed-item{color:var(--base-color)}.ui-feed-item .ui-feed-item__ogp-image{display:none}@media screen and (min-width:48rem){.ui-feed-item .ui-feed-item__ogp-image{display:block}}.ui-feed-item .ui-feed-item__ogp-image img{width:100%;height:10.5em;object-fit:contain}.ui-feed-item .ui-feed-item__title{margin-top:.5em;font-size:.9em}.ui-feed-item .ui-feed-item__title a:hover{text-decoration:underline}.ui-feed-item .ui-feed-item__title a:visited{color:var(--base-color-lighter)}.ui-feed-item .ui-feed-item__blog-title{margin:.3em 0;font-size:.75em;left:0!important}.ui-feed-item .ui-feed-item__summary{font-size:.75em;margin:.3em 0;word-break:break-all;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;display:-webkit-box}.ui-feed-item .ui-feed-item__summary a{color:var(--base-color-muted)}.ui-feed-item .ui-feed-item__date{color:var(--base-color-muted);font-size:.7em}
+</style><title>企業テックブログRSS</title></head><body><header role="banner" class="ui-section-header"><div class="ui-layout-container"><div class="ui-section-header__layout ui-layout-flex"><a 
+href="https://yamadashy.github.io/tech-blog-rss-feed/" role="link" aria-label="#"><img src="images/icon.png" alt="サイトロゴ"> <span class="ui-section-header__title">企業テックブログRSS</span> </a><a 
+href="https://github.com/yamadashy/tech-blog-rss-feed/" role="link" aria-label="#"><img src="images/github-mark.png" alt="GitHubロゴ"></a></div></div></header><main role="main"><section 
+class="ui-section-content top-section"><div class="ui-layout-container"><div class="ui-layout-column-6 ui-layout-column-center"><p class="ui-text-intro">企業のテックブログの更新をまとめた<br>RSSフィードを配信しています<br></p>
+<div class="ui-component-cta ui-layout-flex"><form class="ui-component-form ui-layout-grid"><label class="ui-component-form__label" for="feed-url-slack"><img src="images/slack-mark.png" 
+alt="Slackのロゴ"></label> <input type="text" id="feed-url-slack" class="ui-component-input ui-component-input-medium" readonly="readonly" 
+value="/feed https://yamadashy.github.io/tech-blog-rss-feed/feeds/atom.xml"> <button type="button" 
+class="ui-component-button ui-component-button-medium ui-component-button-primary feed-url-copy-button">コピー</button></form><p class="ui-text-note"><small>Slackに貼り付けると更新を受け取ることができます</small></p><form 
+class="ui-component-form ui-layout-grid"><label class="ui-component-form__label" for="feed-url-atom"><span>Atom URL</span></label> <input type="text" id="feed-url-atom" 
+class="ui-component-input ui-component-input-medium" readonly="readonly" value="https://yamadashy.github.io/tech-blog-rss-feed/feeds/atom.xml"> <button type="button" 
+class="ui-component-button ui-component-button-medium ui-component-button-primary feed-url-copy-button">コピー</button></form><form class="ui-component-form ui-layout-grid"><label 
+class="ui-component-form__label" for="feed-url-rss"><span>RSS URL</span></label> <input type="text" id="feed-url-rss" class="ui-component-input ui-component-input-medium" readonly="readonly" 
+value="https://yamadashy.github.io/tech-blog-rss-feed/feeds/rss.xml"> <button type="button" class="ui-component-button ui-component-button-medium ui-component-button-primary feed-url-copy-button">コピー
+</button></form></div></div></div></section><section class="ui-section-content ui-section-feed"><div class="ui-layout-container"><h2 class="ui-typography-heading">直近1週間の更新</h2><div 
+class="ui-section-content--feature ui-layout-grid ui-layout-grid-3 ui-container-feed"><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://zenn.dev/ubie/articles/fe845089489229">
+<img 
+src="https://res.cloudinary.com/zenn/image/upload/s---KaDkoVV--/co_rgb:222%2Cg_south_west%2Cl_text:notosansjp-medium.otf_37_bold:Ubie%252C%2520Inc.%2Cx_203%2Cy_98/c_fit%2Cco_rgb:222%2Cg_north_west%2Cl_text:notosansjp-medium.otf_60_bold:%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2599%25E3%2583%25BC%25E3%2583%2588%25E3%2581%25AAnpm%25E3%2583%2591%25E3%2583%2583%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%2592Dockerfile%25E3%2581%25A7%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25B9%25E3%2583%2588%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%2597%25E3%2581%25A6GitHub%2520Actions%25E3%2581%25A7%25E3%2583%2593%25E3%2583%25AB%25E3%2583%2589%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vemVubi9pbWFnZS9mZXRjaC9zLS1oaHFzd1VtcS0tL2NfbGltaXQlMkNmX2F1dG8lMkNmbF9wcm9ncmVzc2l2ZSUyQ3FfYXV0byUyQ3dfNzAvaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzIxM2U3YzMzMGUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_72/v1627274783/default/og-base_z4sxah.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://zenn.dev/ubie/articles/fe845089489229">プライベートなnpmパッケージをDockerfileでインストールしてGitHub Actionsでビルドする</a></h5><div 
+class="ui-feed-item__blog-title">Ubie, Inc.さんのフィード</div><p class="ui-feed-item__summary"><a href="https://zenn.dev/ubie/articles/fe845089489229">
+はじめに こんにちは。 医療系スタートアップUbie株式会社の「Ubie Discovery」というチームで働く@jimboです。Webフロントエンドが得意なソフトウェアエンジニアです。 社内限定のプライベートなnpmパッケージを開発し、npm registryやGitHub Packagesに登録して、さまざまなプロジェクトでnpm installして利用したいことがあります。 （UbieにもG...
+</a></p><div class="ui-feed-item__date" title="2022-02-12 06:24:06">1時間前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://zenn.dev/ubie/articles/4c02baa037c5aa">
+<img 
+src="https://res.cloudinary.com/zenn/image/upload/s--TCkQBe5w--/co_rgb:222%2Cg_south_west%2Cl_text:notosansjp-medium.otf_37_bold:Ubie%252C%2520Inc.%2Cx_203%2Cy_98/c_fit%2Cco_rgb:222%2Cg_north_west%2Cl_text:notosansjp-medium.otf_70_bold:Ubie%2520Discovery%25E7%25A4%25BE%25E5%2586%2585%25E3%2581%25AE%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E6%25A4%259C%25E8%25A8%25BC%25E7%2592%25B0%25E5%25A2%2583%2520dev-n%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vemVubi9pbWFnZS9mZXRjaC9zLS1oaHFzd1VtcS0tL2NfbGltaXQlMkNmX2F1dG8lMkNmbF9wcm9ncmVzc2l2ZSUyQ3FfYXV0byUyQ3dfNzAvaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzIxM2U3YzMzMGUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_72/v1627274783/default/og-base_z4sxah.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://zenn.dev/ubie/articles/4c02baa037c5aa">Ubie Discovery社内のサービス検証環境 dev-n</a></h5><div 
+class="ui-feed-item__blog-title">Ubie, Inc.さんのフィード</div><p class="ui-feed-item__summary"><a href="https://zenn.dev/ubie/articles/4c02baa037c5aa">
+こんにちはUbie Discoveryに入って早５ヶ月目の @shikajiro です。（月日は早いな。。。）医療業界は何もわからない状態でしたが、最近はちょっとずつドメイン知識や組織周りも見えるようになり、がむしゃらに働いてます。プロダクト開発以外にも前職で培ったGCPやkubernetesの経験を活かし、開発環境のインフラ周りの整備なんかもやってます。 僕のいるスクラムチームには医師も参加して...
+</a></p><div class="ui-feed-item__date" title="2022-02-11 14:57:25">16時間前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://www.techceed-inc.com/engineer_blog/8009/"><img src="https://www.techceed-inc.com/wp-content/uploads/2022/01/24f038f54338d20da4c40888a1d73dcd.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5
+ class="ui-feed-item__title"><a href="https://www.techceed-inc.com/engineer_blog/8009/">初学者でも簡単!?Fabric.jsを使ってお絵描きWebアプリを作ってみた</a></h5><div class="ui-feed-item__blog-title">
+ENGINEER BLOG – 日販テクシード株式会社（NT）</div><p class="ui-feed-item__summary"><a href="https://www.techceed-inc.com/engineer_blog/8009/">
+エンジニアブログをご覧の皆さん、こんにちは！ SCI本部の沖田と申します。 今回初めてエンジニアブログを書かせていただきます。 最近Fabric.jsというライブラリに触れる機会がありました。 今回は ... 続きを読む</a></p><div class="ui-feed-item__date" title="2022-02-11 06:00:32">1日前</div></div><div 
+class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://paiza.hatenablog.com/entry/2022/02/11/100000"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/paiza/20170516/20170516120134.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://paiza.hatenablog.com/entry/2022/02/11/100000">Python、PHP、Java、JavaScript、Ruby、C、C#など24言語で遊べる無料プログラミングゲーム紹介</a></h5><div class="ui-feed-item__blog-title">paiza開発日誌</div><p 
+class="ui-feed-item__summary"><a href="https://paiza.hatenablog.com/entry/2022/02/11/100000">
+こんにちは。谷口です。これから連休に入る方も、出かける予定がない方も、この機会にゲーム感覚でプログラミングの勉強を始めてみるのはいかがでしょうか。とはいえ、初心者の方がプログラミングの勉強を始めると 何から始めたらよいかわからない 継続できる自信がない 問題をたくさん解いて練習したい コードをたくさん書いて手を動かしたい といった課題がつきものです。そこで今回は、プログラミング初心者でも楽しくプロ...
+</a></p><div class="ui-feed-item__date" title="2022-02-11 01:00:00">1日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech.excite.co.jp/entry/2022/02/10/234445"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/pomupomupurinkun/20220210/20220210105339.png" loading="lazy" alt="記事のアイキャッチ画像"></a>
+<h5 class="ui-feed-item__title"><a href="https://tech.excite.co.jp/entry/2022/02/10/234445">Sliverを使用したUI実装におけるHeaderの実装方法について</a></h5><div class="ui-feed-item__blog-title">エキサイト TechBlog.</div><p 
+class="ui-feed-item__summary"><a href="https://tech.excite.co.jp/entry/2022/02/10/234445">
+こんにちは。最近AndroidからFlutterでの開発に移転した、エキサイト株式会社の奥田です。 今回のブログ内容は前回の記事の続編ですのでSliverの基本的な実装は下記のブログを閲覧していただけると幸いです。 tech.excite.co.jp 本題になりますが、今回はSliverを使用したUIでSliverToBoxAdapterを使用し、Headerを実装する方法について記述します。 実...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 14:44:45">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://zenn.dev/randd/articles/84ac7de7f22800">
+<img 
+src="https://res.cloudinary.com/zenn/image/upload/s--b6pfjSgC--/co_rgb:222%2Cg_south_west%2Cl_text:notosansjp-medium.otf_37_bold:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BER%2526D%2Cx_203%2Cy_98/c_fit%2Cco_rgb:222%2Cg_north_west%2Cl_text:notosansjp-medium.otf_70_bold:Docker%25E5%25AE%258C%25E5%2585%25A8%25E3%2581%25AB%25E7%2590%2586%25E8%25A7%25A3%25E3%2581%2597%25E3%2581%259F%25EF%25BC%2588%25E3%2583%259E%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vemVubi9pbWFnZS9mZXRjaC9zLS0tRGJwUzUtaC0tL2NfbGltaXQlMkNmX2F1dG8lMkNmbF9wcm9ncmVzc2l2ZSUyQ3FfYXV0byUyQ3dfNzAvaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzBmZmU2YmMzODQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_72/v1627274783/default/og-base_z4sxah.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://zenn.dev/randd/articles/84ac7de7f22800">Docker完全に理解した（マウントについて）</a></h5><div class="ui-feed-item__blog-title">
+株式会社R&amp;Dさんのフィード</div><p class="ui-feed-item__summary"><a href="https://zenn.dev/randd/articles/84ac7de7f22800">
+伊藤です。dockerでいつもコンテナを作り直す必要がある時とない時、何が違うのかと疑問に思っていたのですが、理由がわかったので共有します。 そもそもマウントには「取り付ける」という意味がありますが、dockerでは何を取り付けているのかというとコンテナに自分のPCのストレージの一部（これをvolumeと呼ぶ）をマウントしています。 そして、このマウントの方法には２種類あるのです。（ここがややこし...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 11:22:17">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://blog.engineer.adways.net/entry/2022/02/10/200000"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/A/AdwaysEngineerBlog/20220210/20220210161356.png" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://blog.engineer.adways.net/entry/2022/02/10/200000">なぜ崩したシステム設計が事業貢献、仮説検証のしやすさに繋がるのか？最近の事例から考える</a></h5><div 
+class="ui-feed-item__blog-title">Adwaysエンジニアブログ</div><p class="ui-feed-item__summary"><a href="https://blog.engineer.adways.net/entry/2022/02/10/200000">
+こんにちは。まっちゃんです。前までは上流工程などで要件決めを携わることが多かったのですが、ここ半年で開発機会を増やしています。改めてレビューで多くの指摘をもらったり、設計思想の考え方、効率的な書き方など日々学ばせて頂いてます。 考えながらのコーディング、楽しいですね。今回は GCP をガッツリ触ってシステム構築をしたり、 TypeScript でのアプリケーション開発を一から行いました。 仮説検証...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 11:00:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech.classi.jp/entry/2022/02/10/181500?utm_source=feed"><img src="https://ogimage.blog.st-hatena.com/26006613504214060/13574176438061957542/1644484500" loading="lazy" alt="記事のアイキャッチ画像">
+</a><h5 class="ui-feed-item__title"><a href="https://tech.classi.jp/entry/2022/02/10/181500?utm_source=feed">go generateを忘れていないかCIで検出する</a></h5><div class="ui-feed-item__blog-title">Classi開発者ブログ</div>
+<p class="ui-feed-item__summary"><a href="https://tech.classi.jp/entry/2022/02/10/181500?utm_source=feed">
+こんにちは・こんばんは・おはようございます 開発支援部基盤バックエンドチームのid:aerealです。 今回は小粒でピリリと辛いちょっとしたテクニックをお届けします。 Goとコード生成 Goとコード生成は密接な関係にあります。 なにしろ go generate というサブコマンドが提供されているほどです。 Classiが開発しているGoを採用したミドルウェア・dronにおいてもgomockによるモ...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 09:15:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://engineering.cocone.io/2022/02/10/cocone-tech-talk-vol-5-cocone-x-cluster/"><img 
+src="https://i0.wp.com/engineering.cocone.io/wp-content/uploads/2022/02/banner001.png?fit=1200%2C480&amp;ssl=1" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://engineering.cocone.io/2022/02/10/cocone-tech-talk-vol-5-cocone-x-cluster/">cocone Tech Talk vol.5 ~ cocone x cluster ~</a></h5><div class="ui-feed-item__blog-title">cocone engineering
+</div><p class="ui-feed-item__summary"><a href="https://engineering.cocone.io/2022/02/10/cocone-tech-talk-vol-5-cocone-x-cluster/">
+2月25日(金)に第5回目となる「cocone TECH TALK」をオンラインで開催いたします！ なんと今回はバーチャル上での音楽ライブやイベントで有名なメタバースプラットフォームを展開しているクラスター株式会社様との […]</a></p><div class="ui-feed-item__date" title="2022-02-10 09:00:04">2日前</div></div>
+<div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://blog.tech-monex.com/entry/2022/02/10/174834"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/P/PonT/20220208/20220208124112.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://blog.tech-monex.com/entry/2022/02/10/174834">まわりの人の独り言をずっとメモしてたので、そのログから新しい独り言を自動生成してみる</a></h5><div class="ui-feed-item__blog-title">MONEX ENGINEER BLOG │マネックス エンジニアブログ</div><p 
+class="ui-feed-item__summary"><a href="https://blog.tech-monex.com/entry/2022/02/10/174834">
+こんにちは。マネックス・ラボの田中です。 突然ですが、皆さんは独り言をよく言いますか？私はあまり言いませんが、人の独り言を聞くのは結構好きです。 そのため、私には人の独り言を記録するというライフワークがあります。これまでプロジェクトの都合や人の異動で、席替えが3ヶ月に1回くらいあったので、10人以上の独り言を記録してきました。 お気に入りの独り言を抜粋しました 今は在宅勤務が増え、フリーアドレス制...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 08:48:34">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://blog.s-style.co.jp/2022/02/8605/"><img 
+src="https://blog.s-style.co.jp/wp-content/uploads/eyecatch/e-perconaxtradbcluster.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://blog.s-style.co.jp/2022/02/8605/">PXCのNon-Blocking Operations方式の紹介</a></h5><div class="ui-feed-item__blog-title">スマートスタイル TECH BLOG</div><p class="ui-feed-item__summary"><a 
+href="https://blog.s-style.co.jp/2022/02/8605/">
+はじめに Percona XtraDB Cluster(PXC) 8.0.25からOnline Scheme Upgradesの新方式としてNon-Blocking Operations(NBO)方式が追加されました。 本記事ではこのNBO方式について紹介したいと思います。 なお、NBO方式はTech Previewです。変更される可能性があり、テスト目的での使用が推奨されています。 現行のOnl...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 08:30:29">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://moneyforward.com/engineers_blog/2022/02/10/how-to-start-sre/"><img src="https://moneyforward.com/engineers_blog/wp-content/uploads/2016/05/engineerblog_image.png" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://moneyforward.com/engineers_blog/2022/02/10/how-to-start-sre/">How to start SRE in a small team, all by yourself.</a></h5><div 
+class="ui-feed-item__blog-title">Engineers&#39; Blog</div><p class="ui-feed-item__summary"><a href="https://moneyforward.com/engineers_blog/2022/02/10/how-to-start-sre/">
+「少人数のチームにて、一人からSREを始めるにはどうすればいいのか？」 2021 … 続きを読む → Tags: Del.icio.us Facebook TweetThis Digg StumbleUpon Comments: 0 (Zero), Be the first to leave a reply! You might be interested in this: マネー...</a>
+</p><div class="ui-feed-item__date" title="2022-02-10 08:00:09">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://developer.hatenastaff.com/entry/2022/02/10/170000"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/motemen/20211229/20211229163220.png" loading="lazy" alt="記事のアイキャッチ画像"></a>
+<h5 class="ui-feed-item__title"><a href="https://developer.hatenastaff.com/entry/2022/02/10/170000">はてなのポッドキャスト Backyard Hatena #4 を配信中です</a></h5><div class="ui-feed-item__blog-title">
+Hatena Developer Blog</div><p class="ui-feed-item__summary"><a href="https://developer.hatenastaff.com/entry/2022/02/10/170000">
+こんにちは、CTO の id:motemen です。はてなのエンジニア組織である技術グループでやっているポッドキャスト「Backyard Hatena」を更新しました。「Backyard Hatena」は、株式会社はてなのメンバーの普段の様子や、サービス開発の裏側や技術、取り組みなどについて、CTO の id:motemen を中心としたメンバーがカジュアルにお届けするポッドキャストです。 Bac...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 08:00:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://blog.cybozu.io/entry/2022/02/10/170000">
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cybozuinsideout/20220127/20220127115705.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://blog.cybozu.io/entry/2022/02/10/170000">新しいモバイル価値とは？ユーザーリサーチ勉強会を紹介します！ | Cybozu Inside Out</a></h5><div class="ui-feed-item__blog-title">サイボウズエンジニアのブログ</div><p 
+class="ui-feed-item__summary"><a href="https://blog.cybozu.io/entry/2022/02/10/170000">
+こんにちは！モバイルチームの松元です。 モバイルチームの活動の中から「ユーザーリサーチ勉強会」について紹介します。 この勉強会はデザイン＆リサーチチームとモバイルチームの有志が集まり、 ユーザーリサーチのあれこれを実践を通して学ぼうといった目的でやっているものです。 なぞなぞで盛り上がる人々 モバイルチームに関しては下記の記事をご参照ください。 blog.cybozu.io</a></p><div
+ class="ui-feed-item__date" title="2022-02-10 08:00:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech.smartcamp.co.jp/entry/pair-programming-party?utm_source=feed"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mkt0225/20220210/20220210134923.png" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://tech.smartcamp.co.jp/entry/pair-programming-party?utm_source=feed">エンジニア組織の課題を解消するためにペアプロ会を定期開催している話</a></h5><div 
+class="ui-feed-item__blog-title">SMARTCAMP Engineer Blog</div><p class="ui-feed-item__summary"><a href="https://tech.smartcamp.co.jp/entry/pair-programming-party?utm_source=feed">
+こんにちは！スマートキャンプ社でWebエンジニアとして働いている中川（@let_mkt）です。 みなさんは普段ペアプロやっていますか？ 今回の記事では弊社のエンジニア組織で定期的に開催している「ペアプロ会」について紹介します！ 昨年の夏からこれまでに5回ほど開催してきたペアプロ会の開催までの経緯や概要、メリット、課題などについてが主な内容になります。 リモートワーク下でエンジニア間のコミュニケーシ...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 08:00:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://engineering.mercari.com/blog/entry/20220210-how-istio-solved-our-problems/"><img 
+src="https://storage.googleapis.com/prd-engineering-asset/2022/02/d9bd5e56-istio-が解決する私達の問題-_-our-problems-are-solved-by-istio-page-3.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://engineering.mercari.com/blog/entry/20220210-how-istio-solved-our-problems/">Istio が解決する私達の問題</a></h5><div class="ui-feed-item__blog-title">メルカリエンジニアリングブログ
+</div><p class="ui-feed-item__summary"><a href="https://engineering.mercari.com/blog/entry/20220210-how-istio-solved-our-problems/">
+この記事は @hatappi によって提供される Developer Productivity Engineering Camp blog series の１つです。 序論 私達 Microservices Networ […]</a></p><div class="ui-feed-item__date" title="2022-02-10 07:36:26">2日前</div></div>
+<div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://mixi-developers.mixi.co.jp/test-contruct-by-ethernal-9b549cb1bf6c?source=rss----bc6b0ae5a97c---4"><img 
+src="https://miro.medium.com/max/968/1*LObi3hRO10XN4q-g2WmZyA.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://mixi-developers.mixi.co.jp/test-contruct-by-ethernal-9b549cb1bf6c?source=rss----bc6b0ae5a97c---4">Ethernalを使ってGanache にデプロイしたコントラクトをGUIで気軽に試そう！</a></h5><div 
+class="ui-feed-item__blog-title">mixi developers - Medium</div><p class="ui-feed-item__summary"><a 
+href="https://mixi-developers.mixi.co.jp/test-contruct-by-ethernal-9b549cb1bf6c?source=rss----bc6b0ae5a97c---4"></a></p><div class="ui-feed-item__date" title="2022-02-10 04:33:16">2日前</div></div><div 
+class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://paiza.hatenablog.com/entry/2022/02/10/130000"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/paiza/20220209/20220209144138.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://paiza.hatenablog.com/entry/2022/02/10/130000">初心者におすすめなGitの学習方法はこれ！入門から習得までの道のりをレクチャー</a></h5><div class="ui-feed-item__blog-title">paiza開発日誌</div><p class="ui-feed-item__summary"><a 
+href="https://paiza.hatenablog.com/entry/2022/02/10/130000">
+本記事では、開発を行う際必須となるバージョン管理システムの1つであるGitについて解説します。Gitとは何か、またGitHubとは何かなど、初心者の方が混乱しやすいところから、Gitを習得するための学習方法などを紹介します。 Gitの学習ロードマップ 初心者がGitを習得するための学習の流れ Git・GitHubとは 初心者がGitを習得するための学習の流れ 学習の流れ（1）用語や機能を理解する ...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 04:00:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://tech.uzabase.com/entry/2022/02/10/120835">
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/u/uzabase/20220210/20220210123726.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://tech.uzabase.com/entry/2022/02/10/120835">1人で自由に開発する『1人プロジェクト』やってみた。レポート #1</a></h5><div class="ui-feed-item__blog-title">Uzabase Tech</div><p class="ui-feed-item__summary"><a 
+href="https://tech.uzabase.com/entry/2022/02/10/120835">
+こんにちは。 Product Team の相川です。 現在はProduct TeamでINITIALというプロダクトの開発をしております。 Product Teamではチーム開発を実施しておりますが、1ヶ月間だけプロジェクトから離れて1人で自由に開発をする「1人プロジェクト」が認められています。 今回はその「1人プロジェクト」についてお話ししていきます。 「1人プロジェクト」とは？ 上述の通り、「...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 03:08:35">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://developer.aiming-inc.com/activities/slack-group-mention-for-guest-user/"><img 
+src="https://developer.aiming-inc.com/wp-content/uploads/2022/02/rock-n-roll-monkey-LEPhZkQbUrk-unsplash-640x500.jpeg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://developer.aiming-inc.com/activities/slack-group-mention-for-guest-user/">Slack のグループメンションをゲストアカウントでも使えるようにしよう</a></h5><div class="ui-feed-item__blog-title">Aiming 開発者ブログ</div><p 
+class="ui-feed-item__summary"><a href="https://developer.aiming-inc.com/activities/slack-group-mention-for-guest-user/">
+こんにちは。 第一事業部に所属しているエンジニアの珍田です。 今回は、一部プロジェクトで導入している Slack ボットを紹介します。 プロジェクトに所属するメンバーが 3 桁の人数規模にもなってくるとさまざまな方が開発に参加されることとなります。 Slack のマルチチャネルゲ […]</a></p><div class="ui-feed-item__date" 
+title="2022-02-10 03:00:52">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://zenn.dev/ubie/articles/oss-donation"><img 
+src="https://res.cloudinary.com/zenn/image/upload/s--Up0a50gl--/co_rgb:222%2Cg_south_west%2Cl_text:notosansjp-medium.otf_37_bold:Ubie%252C%2520Inc.%2Cx_203%2Cy_98/c_fit%2Cco_rgb:222%2Cg_north_west%2Cl_text:notosansjp-medium.otf_70_bold:Ubie%25E3%2581%25AE%25E3%2581%2593%25E3%2582%258C%25E3%2581%25BE%25E3%2581%25A7%25E3%2581%25AEOSS%25E6%2594%25AF%25E6%258F%25B4%25E3%2581%25A8%25E3%2580%2581%25E3%2581%2593%25E3%2582%258C%25E3%2581%258B%25E3%2582%2589%25E3%2581%25AE%25E6%2594%25AF%25E6%258F%25B4%25E6%2588%25A6%25E7%2595%25A5%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vemVubi9pbWFnZS9mZXRjaC9zLS1oaHFzd1VtcS0tL2NfbGltaXQlMkNmX2F1dG8lMkNmbF9wcm9ncmVzc2l2ZSUyQ3FfYXV0byUyQ3dfNzAvaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzIxM2U3YzMzMGUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_72/v1627274783/default/og-base_z4sxah.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://zenn.dev/ubie/articles/oss-donation">UbieのこれまでのOSS支援と、これからの支援戦略</a></h5><div class="ui-feed-item__blog-title">
+Ubie, Inc.さんのフィード</div><p class="ui-feed-item__summary"><a href="https://zenn.dev/ubie/articles/oss-donation">
+Ubie Discovery ソフトウェアエンジニアのゆうく(@MonchiFC)です。 Ubie として2021年5月から行っている OSS への支援を振り返り、得られた学びや今後の支援戦略をご紹介します。 これまでの支援内容 ほぼ全て Open Collective を通して寄付しています。 Babel JavaScript/TypeScript のトランスパイラです。2021年5月...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 02:48:16">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://techracho.bpsinc.jp/hachi8833/2022_02_10/115537"><img src="https://techracho.bpsinc.jp/wp-content/uploads/2022/02/rails7.0.2_released_eyecatch-min.png" loading="lazy" alt="記事のアイキャッチ画像">
+</a><h5 class="ui-feed-item__title"><a href="https://techracho.bpsinc.jp/hachi8833/2022_02_10/115537">Rails 7.0.2がリリースされました</a></h5><div class="ui-feed-item__blog-title">TechRacho</div><p 
+class="ui-feed-item__summary"><a href="https://techracho.bpsinc.jp/hachi8833/2022_02_10/115537">
+Ruby on Rails 7.0.2がリリースされました。 Rails 7.0.2 has been released. While this is a patch level release, there are a few notable changes. Please read the blog post for more information. https://t.co/jgRoeRS...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 02:00:02">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://techblog.cartaholdings.co.jp/entry/2022/02/10/110000"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/carter_vg/20220208/20220208215319.png" loading="lazy" alt="記事のアイキャッチ画像">
+</a><h5 class="ui-feed-item__title"><a href="https://techblog.cartaholdings.co.jp/entry/2022/02/10/110000">CARTA HOLDINGSの新旧CTOが『Developers Summit 2022』に登壇します！</a></h5><div 
+class="ui-feed-item__blog-title">CARTA TECH BLOG</div><p class="ui-feed-item__summary"><a href="https://techblog.cartaholdings.co.jp/entry/2022/02/10/110000">
+こんにちは。CARTA HOLDINGS技術広報のかーたー(@y_carter0405)です。 2022年2月17日(木) - 2月18日(金)に開催される『Developers Summit 2022』に、2022年1月より弊社の執行役員CTOに就任した鈴木 健太(@suzu_v)と、2021年12月までCTOを務め、現在はTech Boardアドバイザリである小賀 昌法(@makoga)が登壇...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 02:00:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://www.m3tech.blog/entry/2022/02/10/110000">
+<img src="https://ogimage.blog.st-hatena.com/8599973812294943206/13574176438058465002/1644458401" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://www.m3tech.blog/entry/2022/02/10/110000">【Tech Talk 動画紹介】純粋関数型言語Cプリプロセッサで足し算をする</a></h5><div class="ui-feed-item__blog-title">エムスリーテックブログ</div><p class="ui-feed-item__summary"><a 
+href="https://www.m3tech.blog/entry/2022/02/10/110000">
+新卒の永山です。 エムスリーでは隔週金曜日に Tech Talk という社内勉強会を実施しています。 エムスリー公式テックチャンネル 【M3 Tech Channel】 では過去の発表のアーカイブを公開しています。 www.youtube.com 今回は上記YouTubeチャンネルに公開されている私の過去の発表について紹介いたします。 www.youtube.com 概要 オススメの対象 余談 ま...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 02:00:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://engineering.mercari.com/blog/entry/20220210-eab9f5d823/"><img src="https://storage.googleapis.com/prd-engineering-asset/2022/02/75879838-image2.png" loading="lazy" alt="記事のアイキャッチ画像"></a>
+<h5 class="ui-feed-item__title"><a href="https://engineering.mercari.com/blog/entry/20220210-eab9f5d823/">ログデータと言語モデルを用いた同義語辞書の自動構築</a></h5><div class="ui-feed-item__blog-title">メルカリエンジニアリングブログ</div>
+<p class="ui-feed-item__summary"><a href="https://engineering.mercari.com/blog/entry/20220210-eab9f5d823/">
+こんにちは、メルカリの検索チームで機械学習エンジニアとしてインターンをしていた塚越駿 ( @hpp_ricecake ) です。インターンでは、メルカリのログデータと言語モデルを用いて同義語辞書を自動構築するというタスク […]</a></p><div class="ui-feed-item__date" title="2022-02-10 01:54:27">2日前</div></div>
+<div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://studist.tech/four-good-things-to-work-on-as-em-963fa78995b8?source=rss----1b85cc1f989a---4"><img 
+src="https://miro.medium.com/max/1200/0*myQaRSUG_Cmfo3I_" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://studist.tech/four-good-things-to-work-on-as-em-963fa78995b8?source=rss----1b85cc1f989a---4">EMとして転職して3ヶ月で取り組んでよかったこと4つ</a></h5><div class="ui-feed-item__blog-title">スタディスト開発ブログ - Medium
+</div><p class="ui-feed-item__summary"><a href="https://studist.tech/four-good-things-to-work-on-as-em-963fa78995b8?source=rss----1b85cc1f989a---4"></a></p><div class="ui-feed-item__date" 
+title="2022-02-10 01:22:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://engineering.mercari.com/blog/entry/20220209-a71b0c7c26/"><img 
+src="https://storage.googleapis.com/prd-engineering-asset/2022/02/c3b4b52f-03_napoli.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://engineering.mercari.com/blog/entry/20220209-a71b0c7c26/">メルカリShopsとメルペイはどうつながっているのか</a></h5><div class="ui-feed-item__blog-title">メルカリエンジニアリングブログ</div><p class="ui-feed-item__summary"><a
+ href="https://engineering.mercari.com/blog/entry/20220209-a71b0c7c26/">こんにちは。ソウゾウのSoftware Engineerの@napoliです。連載：メルカリShops 開発の裏側 Vol.2の3日目を担当させていただきます。 メルカリShopsはメルペイと連携し、メルペイによる決済シ […]</a></p><div 
+class="ui-feed-item__date" title="2022-02-10 01:00:57">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://note.com/dd_techblog/n/n7f18b9c1e838"><img 
+src="https://assets.st-note.com/production/uploads/images/70676083/rectangle_large_type_2_f953e9827c3b6e6cf70f181089f1d802.png?fit=bounds&amp;quality=85&amp;width=1280" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://note.com/dd_techblog/n/n7f18b9c1e838">卓上の立体AIは、私たちの寂しさを埋めてくれるか？</a></h5><div class="ui-feed-item__blog-title">
+Dentsu Digital Tech Blog</div><p class="ui-feed-item__summary"><a href="https://note.com/dd_techblog/n/n7f18b9c1e838">
+こんにちは。電通デジタル、クリエイティブストラテジストの喜々津です。 デジタルデバイスの進化により、およそ4万5000年前イノシシの壁画から続いてきた平面でのコミュニケーションに、変化が訪れました。世はまさに大XR時代といえます。 アニメや漫画において、いわゆる未来として描かれてきた立体映像投影もいよいよ現実のものとなり、空想上のコンテンツはその存在感を向上。 そんな認知進化の激流にあるXRの新デ...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 01:00:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech-blog.optim.co.jp/entry/2022/02/10/100000?utm_source=feed"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/o/optim-tech/20190129/20190129152556_original.jpg" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://tech-blog.optim.co.jp/entry/2022/02/10/100000?utm_source=feed">13億のパラメータを持つ日本語GPTでFew-shot推論を試してみる</a></h5><div 
+class="ui-feed-item__blog-title">OPTiM TECH BLOG</div><p class="ui-feed-item__summary"><a href="https://tech-blog.optim.co.jp/entry/2022/02/10/100000?utm_source=feed">
+こんにちは、R&amp;Dの伊藤です。「〇〇 is all you need」系の論文が多すぎて何が本当に必要なのか悩みながら機械学習タスクに取り組んだりしています。 今回は先日公開されたrinna社の日本語GPTモデルを使って遊んでみた記事になります。 はじめに 日本語GPTモデルを動かしてみる Few-shotで推論を試す 感情分析 計算 おわりに はじめに GPTは簡単に言えば「超高性能な言語モデル...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 01:00:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech-blog.cloud-config.jp/2022-02-10-power-automate-avoiding-infinite-loop/"><img 
+src="https://tech-blog.cloud-config.jp/wp-content/uploads/2022-02-10-power-automate-avoiding-infinite-loop-000.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://tech-blog.cloud-config.jp/2022-02-10-power-automate-avoiding-infinite-loop/">Power Automateで無限ループを回避する方法</a></h5><div class="ui-feed-item__blog-title">cloud.config Tech Blog</div><p 
+class="ui-feed-item__summary"><a href="https://tech-blog.cloud-config.jp/2022-02-10-power-automate-avoiding-infinite-loop/">
+こんにちは、あおいです。オミクロンショックの米株急落により、含み損がウン百万円です😊 さて、プログラミングにおいて、不具合や不測の事態により無限ループが発生してしまい、メモリを食い潰してプログラムやシステムに支障をきたす […] Power Automateで無限ループを回避する方法 first appeared on cloud.config Tech Blog.</a></p><div 
+class="ui-feed-item__date" title="2022-02-10 01:00:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://engineering.dena.com/blog/2022/02/aws-cdk-v2/"><img 
+src="https://engineering.dena.com/blog/2022/02/aws-cdk-v2/cover.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://engineering.dena.com/blog/2022/02/aws-cdk-v2/">AWS CDK v2 化マイグレーション目録 〜バージョンアップのウォッチから裏付け検証まで〜</a></h5><div class="ui-feed-item__blog-title">Blog on DeNA Engineering</div><p 
+class="ui-feed-item__summary"><a href="https://engineering.dena.com/blog/2022/02/aws-cdk-v2/">
+はじめまして。去年 2021 年の 5 月に DeNA のソリューション事業本部にサーバーサイドエンジニアとしてジョインさせていただいた佐藤康仁といいます。佐藤はたくさんいるので、愛称としてやっさんと呼ばれています。よろしくお願いします。 この記事では、AWS CDK の導入に悩んでいる人や実際 CDK を V2 に上げようか悩んでいる読者に向けて、改めて AWS CDK のよさであったり、CDK...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 00:00:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech.nri-net.com/entry/wrote_an_exam_study_guide_for_aws_certified_advanced_networking_specialty"><img 
+src="https://images-na.ssl-images-amazon.com/images/I/51NY2aBPnAL._SX350_BO1,204,203,200_.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://tech.nri-net.com/entry/wrote_an_exam_study_guide_for_aws_certified_advanced_networking_specialty">「AWS認定 高度なネットワーキング-専門知識(AWS Certified Advanced Networking - Specialty)」の試験対策本を書きました</a>
+</h5><div class="ui-feed-item__blog-title">Technology - NRIネットコムBlog</div><p class="ui-feed-item__summary"><a 
+href="https://tech.nri-net.com/entry/wrote_an_exam_study_guide_for_aws_certified_advanced_networking_specialty">
+小西秀和です。 前作「要点整理から攻略する『AWS認定 データベース-専門知識』」に引き続き、「AWS認定 高度なネットワーキング-専門知識(AWS 認定アドバンストネットワーキング - 専門知識、AWS Certified Advanced Networking - Specialty)」の試験対策本の執筆に参加しましたので、そのことを今回は書こうと思います。 本のタイトルは「要点整理から攻略す...
+</a></p><div class="ui-feed-item__date" title="2022-02-10 00:00:00">2日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://liginc.co.jp/583120"><img 
+src="https://liginc.co.jp/wp-content/uploads/2022/02/ec_220208_p_ogp.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://liginc.co.jp/583120">
+DXを加速させる部署横断チーム「CoE」とは？</a></h5><div class="ui-feed-item__blog-title">株式会社LIGテクノロジー – 株式会社LIG</div><p class="ui-feed-item__summary"><a href="https://liginc.co.jp/583120">
+Strategy＆Consulting事業部 部長の前島です。 企業のDX（デジタルトランスフォーメーション）推進においてよく挙がる課題の一つに、「縦割り組織」があります。今回はその打開策として有効な部署横断チーム「Co […]</a></p><div class="ui-feed-item__date" title="2022-02-09 21:00:30">2日前</div></div>
+<div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://future-architect.github.io/articles/20220210a/"><img src="https://future-architect.github.io/images/20220210a/image.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://future-architect.github.io/articles/20220210a/">Go 1.18集中連載 net/httpのマイナーチェンジ</a></h5><div 
+class="ui-feed-item__blog-title">フューチャー技術ブログ</div><p class="ui-feed-item__summary"><a href="https://future-architect.github.io/articles/20220210a/">
+&lt;img src=&quot;/images/20220210a/image.png&quot; alt=&quot;&quot; width=&quot;1200&quot; height=&quot;543&quot; loading=&quot;lazy&quot;&gt; &lt;h1 id=&quot;はじめに&quot;&gt;&lt;a href=&quot;#はじめに&quot; class=&quot;headerlink&quot;
+</a></p><div class="ui-feed-item__date" title="2022-02-09 15:00:00">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://techracho.bpsinc.jp/hachi8833/2022_02_09/115452"><img src="https://techracho.bpsinc.jp/wp-content/uploads/2022/02/railswatch_20220209_eyecatch-min.png" loading="lazy" alt="記事のアイキャッチ画像">
+</a><h5 class="ui-feed-item__title"><a href="https://techracho.bpsinc.jp/hachi8833/2022_02_09/115452">週刊Railsウォッチ: Rubygems.orgのAPIキーに権限スコープが追加、RailsのDBパフォーマンス改善ほか（20220209後編）</a></h5><div 
+class="ui-feed-item__blog-title">TechRacho</div><p class="ui-feed-item__summary"><a href="https://techracho.bpsinc.jp/hachi8833/2022_02_09/115452">
+こんにちは、hachi8833です。 週刊Railsウォッチについて 各記事冒頭には🔗でパーマリンクを置いてあります: 社内やTwitterでの議論などにどうぞ 「つっつきボイス」はRailsウォッチ公開前ドラフトを（鍋のように）社内有志でつっついたときの会話の再構成です👄 お気づきの点がありましたら@hachi8833までメンションをいただければ確認・対応いたします🙏 TechRachoで...
+</a></p><div class="ui-feed-item__date" title="2022-02-09 09:36:15">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://engineering.cocone.io/2022/02/09/introduction_game_dev_part1/"><img src="https://i0.wp.com/engineering.cocone.io/wp-content/uploads/2021/10/UnityPart1.png?fit=1200%2C675&amp;ssl=1" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://engineering.cocone.io/2022/02/09/introduction_game_dev_part1/">【Unity】ゲーム開発入門 Part1 : 事前準備編</a></h5><div 
+class="ui-feed-item__blog-title">cocone engineering</div><p class="ui-feed-item__summary"><a href="https://engineering.cocone.io/2022/02/09/introduction_game_dev_part1/">
+こんにちは、cocone tech blog編集長のYです! 普段ココネの現役エンジニアによる様々な技術に関する記事を投稿しているcocone tech blogですが、この度ゲーム制作に興味がある初心者の […]</a></p><div class="ui-feed-item__date" title="2022-02-09 09:00:10">3日前</div></div><div 
+class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://engineering.mercari.com/blog/entry/20220209-7dbffabb5e/"><img 
+src="https://storage.googleapis.com/prd-engineering-asset/2022/02/eb01699c-pay_frontend_interview.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://engineering.mercari.com/blog/entry/20220209-7dbffabb5e/">テスト・パフォーマンス・アクセシビリティ・セキュリティの4大品質に取り組むメルペイのフロントエンドチーム #TeamInterview</a></h5><div class="ui-feed-item__blog-title">メルカリエンジニアリングブログ
+</div><p class="ui-feed-item__summary"><a href="https://engineering.mercari.com/blog/entry/20220209-7dbffabb5e/">
+このインタビューではメルペイのフロントエンド開発を支える @ryotah 、 @yutapon 、@tokuda109 、 @dwj の4人に今取り組んでいることや、技術スタック、今後の展望などを聞いています。メルペイの […]</a></p><div class="ui-feed-item__date" title="2022-02-09 07:58:34">3日前</div></div>
+<div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://engineers.ntt.com/entry/2022/02/09/153639"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/N/NTTCom/20220202/20220202182018.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://engineers.ntt.com/entry/2022/02/09/153639">ローカル 5G サービス 第1回 〜ローカル 5G サービスのご紹介〜</a></h5><div class="ui-feed-item__blog-title">NTT Communications Engineers&#39; Blog</div><p 
+class="ui-feed-item__summary"><a href="https://engineers.ntt.com/entry/2022/02/09/153639">
+はじめに こんにちは、データプラットフォームサービス部で IoT 系サービスやフル MVNO 基盤、ローカル 5G サービスの設計開発を担当している真山です。 本ブログでは過去に IoT Connect Gateway を使ってみた 第3回 〜観葉植物育成状況の可視化〜 について投稿しています。今回は、当社のローカル5Gのサービス紹介だけでなく、ユースケースや周辺技術、検証実験の内容の一部を発信し...
+</a></p><div class="ui-feed-item__date" title="2022-02-09 06:36:39">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech.excite.co.jp/entry/2022/02/09/152907"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/t/taanatsu/20220208/20220208125252.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://tech.excite.co.jp/entry/2022/02/09/152907">IntellJ最新版（2021.3.1）で、Projectツリーに急に表示されるようになったPHPのメソッド一覧を消す方法</a></h5><div class="ui-feed-item__blog-title">
+エキサイト TechBlog.</div><p class="ui-feed-item__summary"><a href="https://tech.excite.co.jp/entry/2022/02/09/152907">
+taanatsuです。 IntelliJをアップデートしたら、PHPのプロジェクトのProjectツリーに、そのクラスファイルのメソッド一覧が表示されるようになりましたね。 今回はこれが（ワタシ的に）邪魔なので非表示にする方法を紹介したいと思います。 それではやっていきましょうか。 表示 / 非表示 やり方は簡単で、Projectツリーの歯車マークから、 Tree Appearance -&gt; Sh...
+</a></p><div class="ui-feed-item__date" title="2022-02-09 06:29:07">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://historia.co.jp/archives/24640/"><img 
+src="https://historia.co.jp/wp/wp-content/uploads/2022/01/023.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://historia.co.jp/archives/24640/">
+[UE5]マクロ関数をカスタマイズする</a></h5><div class="ui-feed-item__blog-title">historia Inc – 株式会社ヒストリア</div><p class="ui-feed-item__summary"><a href="https://historia.co.jp/archives/24640/">
+執筆バージョン: Unreal Engine 5.0.0(EarlyAccess) ■はじめに こんにちは、エンジニアの山中です。 今回は、お世話になっている方も多いであろう エンジン提供のマクロ関数を ちょっとだけカス […] The post [UE5]マクロ関数をカスタマイズする first appeared on historia Inc - 株式会社ヒストリア.</a></p><div 
+class="ui-feed-item__date" title="2022-02-09 06:00:55">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://mixi-developers.mixi.co.jp/google-cloud-build-visualize-steps-via-github-actions-89bc63fbe52a?source=rss----bc6b0ae5a97c---4"><img 
+src="https://miro.medium.com/max/1200/1*2-Zt4-e3a-p59X8R9PfFNg.jpeg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://mixi-developers.mixi.co.jp/google-cloud-build-visualize-steps-via-github-actions-89bc63fbe52a?source=rss----bc6b0ae5a97c---4">Google Cloud Buildで、ジョブステップのグラフをプルリクエストでレビューできるようにする</a>
+</h5><div class="ui-feed-item__blog-title">mixi developers - Medium</div><p class="ui-feed-item__summary"><a 
+href="https://mixi-developers.mixi.co.jp/google-cloud-build-visualize-steps-via-github-actions-89bc63fbe52a?source=rss----bc6b0ae5a97c---4"></a></p><div class="ui-feed-item__date" 
+title="2022-02-09 05:18:29">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://jict.hatenablog.com/entry/2022/02/09/140331"><img 
+src="https://ogimage.blog.st-hatena.com/13574176438019247301/13574176438060983537/1644383011" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://jict.hatenablog.com/entry/2022/02/09/140331">Vercel Enterprise 導入しました</a></h5><div class="ui-feed-item__blog-title">justInCaseTechnologiesのテックブログ</div><p class="ui-feed-item__summary"><a
+ href="https://jict.hatenablog.com/entry/2022/02/09/140331">
+こんにちは。justInCaseTechnologiesのwebフロントエンドエンジニアのkondeiです この度、当社は Vercel Pro から Enterpriseプランへと変更しました 差分は Pricing – Vercel の表にある通りです これから検討している方に参考になりそうな情報としては、 契約締結に向けたメールのやり取りについて、こちらからは日本語で書いて送信できた 日本語...
+</a></p><div class="ui-feed-item__date" title="2022-02-09 05:03:31">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://zenn.dev/media_engine/articles/updated-nodejs-from-v12-to-v16"><img 
+src="https://res.cloudinary.com/zenn/image/upload/s--ZWcZTNGc--/co_rgb:222%2Cg_south_west%2Cl_text:notosansjp-medium.otf_37_bold:%25E3%2583%25A1%25E3%2583%2587%25E3%2582%25A3%25E3%2582%25A2%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%25B3%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%2Cx_203%2Cy_98/c_fit%2Cco_rgb:222%2Cg_north_west%2Cl_text:notosansjp-medium.otf_70_bold:Node.js%25E3%2582%2592v12%25E3%2581%258B%25E3%2582%2589v16%25E3%2581%25B8%25E3%2582%25A2%25E3%2583%2583%25E3%2583%2597%25E3%2583%2587%25E3%2583%25BC%25E3%2583%2588%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vemVubi9pbWFnZS9mZXRjaC9zLS1OdndjS3lmZC0tL2NfbGltaXQlMkNmX2F1dG8lMkNmbF9wcm9ncmVzc2l2ZSUyQ3FfYXV0byUyQ3dfNzAvaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzAyNGNiZDJhNjcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_72/v1627274783/default/og-base_z4sxah.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://zenn.dev/media_engine/articles/updated-nodejs-from-v12-to-v16">Node.jsをv12からv16へアップデートした話</a></h5><div 
+class="ui-feed-item__blog-title">メディアエンジン株式会社さんのフィード</div><p class="ui-feed-item__summary"><a href="https://zenn.dev/media_engine/articles/updated-nodejs-from-v12-to-v16">
+はじめに メディアエンジン株式会社の田中です！ 最近、フロントエンド開発で利用しているNode.jsをv12からv16へアップデートしたため、それについてお話しさせていただきます。 実施したこと まず、CircleCIで使用するDockerイメージのNode.jsバージョンをv16へ更新しました。 default: working_directory: ~/&lt;project-name&gt; ...
+</a></p><div class="ui-feed-item__date" title="2022-02-09 04:30:44">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://paiza.hatenablog.com/entry/2022/02/09/130000"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/paiza/20190918/20190918175357.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://paiza.hatenablog.com/entry/2022/02/09/130000">エンジニアが転職先での「悪い意味で想像と違っていた」を防ぐにはどうすればよいか</a></h5><div class="ui-feed-item__blog-title">paiza開発日誌</div><p 
+class="ui-feed-item__summary"><a href="https://paiza.hatenablog.com/entry/2022/02/09/130000">
+こんにちは。谷口です。転職後に「なんか転職前の想像と違ったな…」と思った経験はありませんか。もちろん転職先の仕事内容や同僚、環境などについて100%把握した上で入社するのは難しいことです。しかし、せっかく転職するなら「これを知ってたら入社しなかったのに」「またすぐ転職したいかも…」というギャップは避けたいですよね。先日キャリアバイブルで、転職経験者に聞いた「転職先に入社後、悪い意味で想像と違ったこ...
+</a></p><div class="ui-feed-item__date" title="2022-02-09 04:00:00">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://techblog.openwork.co.jp/entry/engineering-ladders"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/m_nishikawa_ow/20220207/20220207210345.png" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://techblog.openwork.co.jp/entry/engineering-ladders">エンジニアラダーでメンバーの成長を支援する取り組み</a></h5><div class="ui-feed-item__blog-title">
+OpenWork Tech Blog</div><p class="ui-feed-item__summary"><a href="https://techblog.openwork.co.jp/entry/engineering-ladders">
+エンジニアラダー Webアプリチームの西川です。 当社ではエンジニア向けのslackチャンネルがあり、日々思ったことを各自自由に投稿しているのですが. そこで他社のエンジニアラダー（長いので以降「ラダー」と呼称）が面白そうという投稿があり、当社でもラダーを作れるか試行錯誤してみました。 他社のラダーを参考にする まずは他社がどのようなラダーを作っているか調べてみたところ、以下のようなまとめがあった...
+</a></p><div class="ui-feed-item__date" title="2022-02-09 03:30:00">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://www.fabrica-com.co.jp/techblog/technology/7240/"><img src="https://www.fabrica-com.co.jp/techblog/wp-content/uploads/sites/3/2022/02/20220209.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a>
+<h5 class="ui-feed-item__title"><a href="https://www.fabrica-com.co.jp/techblog/technology/7240/">LinuxのcurlコマンドでID/パスワードのあるサイトに自動ログインしてみた♪～github編～</a></h5><div class="ui-feed-item__blog-title">
+テックブログ</div><p class="ui-feed-item__summary"><a href="https://www.fabrica-com.co.jp/techblog/technology/7240/">
+概要 昨今、お仕事でもプライベートでも、インターネット社会となった今、色々なサイトでパスワードを入力してログイ … &quot;LinuxのcurlコマンドでID/パスワードのあるサイトに自動ログインしてみた♪～github編～&quot; の続きを読む</a></p><div class="ui-feed-item__date" title="2022-02-09 03:00:21">3日前
+</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://rheb.hatenablog.com/entry/2022/02/09/OpenShift_%E4%B8%8A%E3%81%A7Mendix%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nmushino/20211110/20211110160307.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://rheb.hatenablog.com/entry/2022/02/09/OpenShift_%E4%B8%8A%E3%81%A7Mendix%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B">OpenShift 上でMendixアプリを公開する</a></h5><div 
+class="ui-feed-item__blog-title">赤帽エンジニアブログ</div><p class="ui-feed-item__summary"><a 
+href="https://rheb.hatenablog.com/entry/2022/02/09/OpenShift_%E4%B8%8A%E3%81%A7Mendix%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B">
+ソリューションアーキテクトの蒸野（ムシノ）です。 今回も引き続き「OpenShift上でのローコード開発」についてお伝えさせて頂けたらと思います。 前回までの振り返り 前回までは、ローコードビジネスのメリットやMendixサンプルアプリを作成しました。 また、MendixアプリをOpenShift上で動作させるためのクラスタ設定方法について言及させていただきました。 rheb.hatenablog...
+</a></p><div class="ui-feed-item__date" title="2022-02-09 03:00:14">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech.bm-sms.co.jp/entry/2022/02/09/120000?utm_source=feed"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/b/bm-sms-product-dev-saiyo-pr/20220208/20220208182444.jpg" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://tech.bm-sms.co.jp/entry/2022/02/09/120000?utm_source=feed">将来のためのサービスを開発したくて未経験の介護業界に飛び込んだ話</a></h5><div 
+class="ui-feed-item__blog-title">エス・エム・エス エンジニア テックブログ</div><p class="ui-feed-item__summary"><a href="https://tech.bm-sms.co.jp/entry/2022/02/09/120000?utm_source=feed">
+これを書いているのはだれ？ 2012年から社会人になって、今年で34才になりました、空中清高です。Twitter とかではsoranakkってIDでやっています。前職の同僚からこんな画像を作ってもらったりしてる感じの人です。 なにをやってきたの？ Webフロントエンドエンジニア→Webサーバーサイドエンジニア→Androidアプリケーションエンジニアという経緯でソフトウェアエンジニアをやってきまし...
+</a></p><div class="ui-feed-item__date" title="2022-02-09 03:00:00">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech.travelbook.co.jp/posts/fastly-30-things/"><img src="https://tech.travelbook.co.jp/posts/fastly-30-things/cover.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://tech.travelbook.co.jp/posts/fastly-30-things/">Fastlyについて知らないかもしれない30のこと</a></h5><div class="ui-feed-item__blog-title">TravelBook Tech Blog</div><p 
+class="ui-feed-item__summary"><a href="https://tech.travelbook.co.jp/posts/fastly-30-things/">いわくら君が書いてくれた通り 、トラベルブックではFastlyを導入しました。Fastlyについて初めて分かったことがたくさんありました。列挙してみたら30個もあったので、一個ずつ紹介してみることにします。
+</a></p><div class="ui-feed-item__date" title="2022-02-09 02:15:40">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://developer.feedforce.jp/entry/2022/02/09/110824"><img src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/4268819/1588226000876991" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://developer.feedforce.jp/entry/2022/02/09/110824">操作ログを用いた行動パターン変化の検知</a></h5><div class="ui-feed-item__blog-title">Feedforce Developer Blog</div><p 
+class="ui-feed-item__summary"><a href="https://developer.feedforce.jp/entry/2022/02/09/110824">
+こんにちは データサイエンティストの八百俊哉です。 最近は花粉が飛んでいることを感じています。目がかゆい。 今回はdfplus.ioの操作ログを用いてクライアントの行動パターン変化を検知する仕組みを作成し、社内で有効活用された事例がありますので、その手法と成果を紹介します。 弊社のサービスdfplus.ioはマーケティング・広告運用チームのためのデータフィード管理ツールになります。様々な商品・商材...
+</a></p><div class="ui-feed-item__date" title="2022-02-09 02:08:24">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://knowledge.sakura.ad.jp/30292/"><img 
+src="https://knowledge.sakura.ad.jp/images/2022/02/JANOG49-LT9-cover-252x184.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://knowledge.sakura.ad.jp/30292/">
+IPアドレス管理指定事業者における業務自動化の取り組みと活用例</a></h5><div class="ui-feed-item__blog-title">さくらのナレッジ is_page</div><p class="ui-feed-item__summary"><a href="https://knowledge.sakura.ad.jp/30292/">
+この記事は、2022年1月27日(木)に行われたJANOG49における発表を編集部にて記事化したものです。 自己紹介 [caption id=&quot;attachment_30304&quot; align=&quot;aligncenter&quot; width=&quot;680&quot;] JANOG49にて発表中の筆者(写真提供：Home NOC Operators’ Group)[/caption] はじめまして。米田悠人と申します。さく...
+</a></p><div class="ui-feed-item__date" title="2022-02-09 02:00:47">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://tech.uzabase.com/entry/2022/02/09/104642">
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/u/ub-matsunami/20220207/20220207192035.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://tech.uzabase.com/entry/2022/02/09/104642">Meet UB Tech #10「多様な技術を受け入れる仕組みとは 〜Rust導入に寄せて〜」を公開しました</a></h5><div class="ui-feed-item__blog-title">Uzabase Tech</div><p 
+class="ui-feed-item__summary"><a href="https://tech.uzabase.com/entry/2022/02/09/104642">
+こんにちは、Uzabaseの松並です。 ユーザベースのエンジニアカルチャーをゆるっとお伝えするPodcast、Meet UB Tech #10 のテーマは「多様な技術を受け入れる仕組みとは 〜Rust導入に寄せて〜」です。 ユーザベース B2B SaaS事業 執行役員CTO 兼 UB Datatech 代表の林さんと、同じくユーザベース B2B SaaS Business Product Team...
+</a></p><div class="ui-feed-item__date" title="2022-02-09 01:46:42">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://www.m3tech.blog/entry/2022/02/09/101047">
+<img src="https://ogimage.blog.st-hatena.com/8599973812294943206/13574176438060896938/1644369047" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://www.m3tech.blog/entry/2022/02/09/101047">【Tech Talk 動画紹介】メタバースでプログラミング</a></h5><div class="ui-feed-item__blog-title">エムスリーテックブログ</div><p class="ui-feed-item__summary"><a 
+href="https://www.m3tech.blog/entry/2022/02/09/101047">デジカルで開発をしている末永(@asmsuechan)です。新卒です。メタバースって単語をこの記事で初めて使いました。 0. 3行で VRヘッドセットを被ってプログラムを書きたい Immersedが仮想モニター増やせるし低遅延だしで使いやすい 長時間使うと首が痛い</a></p><div 
+class="ui-feed-item__date" title="2022-02-09 01:10:47">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://engineering.mercari.com/blog/entry/20220208-a49d9da7ba/"><img src="https://storage.googleapis.com/prd-engineering-asset/2022/02/64b10310-02_keigow.png" loading="lazy" alt="記事のアイキャッチ画像">
+</a><h5 class="ui-feed-item__title"><a href="https://engineering.mercari.com/blog/entry/20220208-a49d9da7ba/">ソウゾウのエンジニア採用と課題</a></h5><div class="ui-feed-item__blog-title">メルカリエンジニアリングブログ</div><p 
+class="ui-feed-item__summary"><a href="https://engineering.mercari.com/blog/entry/20220208-a49d9da7ba/">
+はじめに こんにちは。ソウゾウでEngineering Managerをやっている@keigowです。連載：メルカリShops 開発の裏側 Vol.2の2日目を担当させていただきます。メルカリShopsをプレオープンした […]</a></p><div class="ui-feed-item__date" title="2022-02-09 01:00:38">3日前</div></div>
+<div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://pf-siedler.hatenablog.com/entry/2022/02/09/090757"><img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://pf-siedler.hatenablog.com/entry/2022/02/09/090757">MySQL しか使ったことないアプリケーション開発者が PostgreSQL の Docker 環境を立てるまで</a>
+</h5><div class="ui-feed-item__blog-title">HERP TechHub</div><p class="ui-feed-item__summary"><a href="https://pf-siedler.hatenablog.com/entry/2022/02/09/090757">
+最近仕事で PostgreSQL を使うことになったので、忘備録としてDocker で環境構築して一通り触ったメモを、主に MySQL との差分に注目しながら書きます。 PostgreSQL の D</a></p><div class="ui-feed-item__date" title="2022-02-09 00:07:57">3日前</div></div><div 
+class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://style.biglobe.co.jp/entry/2022/02/09/080000"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/b/biglobe-editor2/20220207/20220207115547.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://style.biglobe.co.jp/entry/2022/02/09/080000">Pythonのデコレータを使ってAWS Lambdaを圧倒的に読みやすくする</a></h5><div class="ui-feed-item__blog-title">TechBlog - BIGLOBE Style ｜ BIGLOBEの「はたらく人」と「トガッた技術」
+</div><p class="ui-feed-item__summary"><a href="https://style.biglobe.co.jp/entry/2022/02/09/080000">CodeDeployを題材にLambda FunctionのイベントハンドラをPythonのデコレータで簡素化する例を紹介します。</a></p><div 
+class="ui-feed-item__date" title="2022-02-08 23:00:00">3日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://future-architect.github.io/articles/20220209a/"><img 
+src="https://future-architect.github.io/images/20220209a/go1.18top.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://future-architect.github.io/articles/20220209a/">Go 1.18集中連載 ジェネリクス</a></h5><div class="ui-feed-item__blog-title">フューチャー技術ブログ</div><p class="ui-feed-item__summary"><a 
+href="https://future-architect.github.io/articles/20220209a/">
+&lt;img src=&quot;/images/20220209a/go1.18top.png&quot; alt=&quot;&quot; width=&quot;600&quot; height=&quot;295&quot;&gt; &lt;p&gt;Go 1.18のリリースが迫っているため、最近恒例でやっている新機能を何人かで紹介する集中連載を行います。ただ、Go</a></p>
+<div class="ui-feed-item__date" title="2022-02-08 15:00:00">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://zenn.dev/dokokade/articles/803c4b79bbf97a"><img 
+src="https://res.cloudinary.com/zenn/image/upload/s--iEeuNVNr--/co_rgb:222%2Cg_south_west%2Cl_text:notosansjp-medium.otf_37_bold:Dokokade%2Cx_203%2Cy_98/c_fit%2Cco_rgb:222%2Cg_north_west%2Cl_text:notosansjp-medium.otf_80_bold:go%25E3%2581%25A7%25E9%2580%25A3%25E6%2583%25B3%25E9%2585%258D%25E5%2588%2597%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%25E3%2583%25A0%25E3%2581%25A4%25E3%2581%258F%25E3%2582%258B%25E3%2582%2588%25E3%2583%25BC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vemVubi9pbWFnZS9mZXRjaC9zLS1fUzhjMC1GLS0tL2NfbGltaXQlMkNmX2F1dG8lMkNmbF9wcm9ncmVzc2l2ZSUyQ3FfYXV0byUyQ3dfNzAvaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzhmOTJkNWI2ZDkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_72/v1627274783/default/og-base_z4sxah.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://zenn.dev/dokokade/articles/803c4b79bbf97a">goで連想配列フォームつくるよー</a></h5><div class="ui-feed-item__blog-title">
+Dokokadeさんのフィード</div><p class="ui-feed-item__summary"><a href="https://zenn.dev/dokokade/articles/803c4b79bbf97a">
+phpって便利ですね。いやgoでwebつくるのがまちがってるのかな？ 表題の件ですが、一筋縄ではなかったです。 phpみたく「name=&quot;item[][name]&quot;」みたいにできないのです。 まぁ単純なスライス配列であれば「name=&quot;item[]&quot;」をそのまま router.POST(&quot;/inc/contact&quot;, func(c *gin.Context) { c.Request.ParseF...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 11:00:59">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://ranger-systems.co.jp/blog-engineer/archives/2328"><img src="https://ranger-systems.co.jp/blog-engineer/wp-content/uploads/2022/02/P1011460_900px-768x576.png" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://ranger-systems.co.jp/blog-engineer/archives/2328">『JANOG49 Meeting』in 鹿児島 出展レポート</a></h5><div class="ui-feed-item__blog-title">
+│エンジニアブログ｜レンジャーシステムズ株式会社</div><p class="ui-feed-item__summary"><a href="https://ranger-systems.co.jp/blog-engineer/archives/2328">
+先日開催された『JANOG49 Meeting』に、レンジャーシステムズはゴールドスポンサーとして出展いたしました。JANOGのセッションには、過去にレンジャーシステムズのメンバーが何度か登壇していますが、協賛・出展は初となります。 今回は、JANOG49に出 […]</a></p><div class="ui-feed-item__date" 
+title="2022-02-08 09:31:00">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://techracho.bpsinc.jp/hachi8833/2022_02_08/115441"><img 
+src="https://techracho.bpsinc.jp/wp-content/uploads/2022/02/railswatch_20220208_eyecatch2-min.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://techracho.bpsinc.jp/hachi8833/2022_02_08/115441">週刊Railsウォッチ: Rails 6.1を7.0にアップグレードしてみた、PostgreSQLでジョブキューほか（20220208前編）</a></h5><div class="ui-feed-item__blog-title">TechRacho</div><p 
+class="ui-feed-item__summary"><a href="https://techracho.bpsinc.jp/hachi8833/2022_02_08/115441">
+こんにちは、hachi8833です。 つっつきボイス:「このSUSEのYouTubeチャネルがめちゃくちゃ面白い↓」「お〜、英語の替え歌がどっさりですね」「映像も凝っていてクォリティが半端ない」 SUSE (openSUSEとかのとこ) のオフィシャルYouTubeチャネルが異常であることが判明しつつあり、こういうMVが無限にある、しかし不当に再生数が少ない https://t.co/hvx7Wj...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 08:30:02">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://mixi-developers.mixi.co.jp/github-cloudbuild-supply-chain-24c795e451f6?source=rss----bc6b0ae5a97c---4"><img src="https://miro.medium.com/max/500/1*KFQmnjHPNwP3_YWYdn3Zmg.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://mixi-developers.mixi.co.jp/github-cloudbuild-supply-chain-24c795e451f6?source=rss----bc6b0ae5a97c---4">
+GitHub の PR 作成権限をもっていると CI 越しに GCP のオーナー権限が使える脆弱性</a></h5><div class="ui-feed-item__blog-title">mixi developers - Medium</div><p class="ui-feed-item__summary"><a 
+href="https://mixi-developers.mixi.co.jp/github-cloudbuild-supply-chain-24c795e451f6?source=rss----bc6b0ae5a97c---4"></a></p><div class="ui-feed-item__date" title="2022-02-08 08:19:01">4日前</div></div>
+<div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://developers.freee.co.jp/entry/developers-thanks-event"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/e/elly_nskw/20220204/20220204141002.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://developers.freee.co.jp/entry/developers-thanks-event">開発組織の陰の立役者に感謝を伝えたい！「たくさんイイことを言う会」を開催しました</a></h5><div class="ui-feed-item__blog-title">freee Developers Blog</div><p 
+class="ui-feed-item__summary"><a href="https://developers.freee.co.jp/entry/developers-thanks-event">
+こんにちは、freeeでDevBrandingを担当しているellyです。ブログや技術イベント等を通じて世の中にfreeeの開発組織をもっともっと知ってもらうための活動をしています。 今回は、1月に開発組織向けにオンライン形式で開催した「たくさんイイことを言う会」について、開催までの経緯や開催概要、当日の様子などをご紹介します。 たくさんイイことを言う会のロゴ 開催に至ったきっかけ 1on1の中で...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 08:00:00">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech-blog.cloud-config.jp/2022-02-08-microsoft-certification-drivecampaign/"><img 
+src="https://tech-blog.cloud-config.jp/wp-content/uploads/2022-02-08-microsoft-certification-drivecampaign-000.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://tech-blog.cloud-config.jp/2022-02-08-microsoft-certification-drivecampaign/">サイバーセキュリティ月間限定の特別オファー！無料で研修受講＆受験費用がタダになる試験バウチャー付キャンペーンが始まったよ！ #Azureリレー</a></h5><div 
+class="ui-feed-item__blog-title">cloud.config Tech Blog</div><p class="ui-feed-item__summary"><a href="https://tech-blog.cloud-config.jp/2022-02-08-microsoft-certification-drivecampaign/">
+こんにちは。Azure認定資格のこと、荒井です。最近は、新規Azure認定試験へのチャレンジより、乱立するAzure更新試験の期限到来リマインド攻撃に翻弄される日々を送っております。頑張らな！ さて、話は変わりますが、皆 […] サイバーセキュリティ月間限定の特別オファー！無料で研修受講＆受験費用がタダになる試験バウチャー付キャンペーンが始まったよ！ #Azureリレー first appeare...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 07:33:18">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://developers.prtimes.jp/2022/02/08/hackathon-23winter/"><img src="https://developers.prtimes.jp/wp-content/uploads/2022/02/13.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://developers.prtimes.jp/2022/02/08/hackathon-23winter/">新卒採用ハッカソン、初の冬開催で過去最多の5名に内定</a></h5><div class="ui-feed-item__blog-title">PR TIMES 開発者ブログ</div><p 
+class="ui-feed-item__summary"><a href="https://developers.prtimes.jp/2022/02/08/hackathon-23winter/">
+開発本部QAチームの山田です。2021年12月23日（木）〜24日（金）にかけて、23卒向けの採用ハッカソンを開催しました。 PR TIMESの100万件を超えるプレスリリースデータのAPIを提供し学生に自由な発想で開発 […] The post 新卒採用ハッカソン、初の冬開催で過去最多の5名に内定 first appeared on PR TIMES 開発者ブログ.</a></p><div 
+class="ui-feed-item__date" title="2022-02-08 06:50:45">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://zenn.dev/ubie/articles/44d0eab3458cc0"><img 
+src="https://res.cloudinary.com/zenn/image/upload/s--2sM81oUi--/co_rgb:222%2Cg_south_west%2Cl_text:notosansjp-medium.otf_37_bold:Ubie%252C%2520Inc.%2Cx_203%2Cy_98/c_fit%2Cco_rgb:222%2Cg_north_west%2Cl_text:notosansjp-medium.otf_70_bold:Ubie%25E3%2581%25A7%25E5%2588%25A9%25E7%2594%25A8%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2582%25A2%25E3%2582%25A4%25E3%2582%25B3%25E3%2583%25B3%25E3%2582%2592npm%25E3%2583%2591%25E3%2583%2583%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B8%25E3%2581%25A8%25E3%2581%2597%25E3%2581%25A6%25E5%2585%25AC%25E9%2596%258B%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25EF%25BC%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vemVubi9pbWFnZS9mZXRjaC9zLS1oaHFzd1VtcS0tL2NfbGltaXQlMkNmX2F1dG8lMkNmbF9wcm9ncmVzc2l2ZSUyQ3FfYXV0byUyQ3dfNzAvaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzIxM2U3YzMzMGUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_72/v1627274783/default/og-base_z4sxah.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://zenn.dev/ubie/articles/44d0eab3458cc0">Ubieで利用しているアイコンをnpmパッケージとして公開しました！</a></h5><div 
+class="ui-feed-item__blog-title">Ubie, Inc.さんのフィード</div><p class="ui-feed-item__summary"><a href="https://zenn.dev/ubie/articles/44d0eab3458cc0">
+こんにちは、Ubie株式会社でデザインエンジニアをやっているtakanoripです。 この度Ubieのプロダクトで利用しているアイコンのReact版 @ubie/ubie-icons をnpmに公開しました！ https://www.npmjs.com/package/@ubie/ubie-icons GitHubのリポジトリはこちら。 https://github.com/ubie-oss/ub...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 05:28:49">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://paiza.hatenablog.com/entry/2022/02/08/140000"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/paiza/20220206/20220206234013.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://paiza.hatenablog.com/entry/2022/02/08/140000">共通テストに「情報」新設！どんな問題が出る？プログラミングって本当に必要？考えてみた</a></h5><div class="ui-feed-item__blog-title">paiza開発日誌</div><p 
+class="ui-feed-item__summary"><a href="https://paiza.hatenablog.com/entry/2022/02/08/140000">
+こんにちは。倉内です。2025年から大学入学共通テストの教科に「情報」の新設が予定されており、国立大学受験生は必須になると言われています。ただ、現在すでに高校では情報系の授業が実施されているため、未知なる教科ではなく、恐れる必要はないという意見も多く見られます。合わせてこの4月からは新学習指導要領が施行され、「情報Ⅰ」が必履修科目となります。一方で、公立高校では「情報」の免許なしで教えている教員が...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 05:00:00">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://developers-jp.googleblog.com/2022/02/quick-builder.html"><img 
+src="http://4.bp.blogspot.com/-fWEPzhrhdqk/WKbYSrN1_8I/AAAAAAAATXE/m2-ZgsirkMYKc_YhcehEb0iUdyGtLs8KACK4B/s1600/lockup_google_developers_horizontal_knockout_wht.png" loading="lazy" alt="記事のアイキャッチ画像">
+</a><h5 class="ui-feed-item__title"><a href="https://developers-jp.googleblog.com/2022/02/quick-builder.html">ロケーションベースのエクスペリエンスを構築するための新たなローコード ツール Quick Builder を発表</a></h5><div 
+class="ui-feed-item__blog-title">Google Developers Japan</div><p class="ui-feed-item__summary"><a href="https://developers-jp.googleblog.com/2022/02/quick-builder.html">
+この記事は Google Maps Platform プロダクト マネージャーの Matt Brightman による Google Cloud Blog の記事 &quot;Announcing Quick Builder, a new low-code tool for you to build location-based experiences&quot; を元に翻訳・加筆したものです。詳しくは元記事をご覧く...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 04:00:00">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech.excite.co.jp/entry/2022/02/08/124910"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/t/taanatsu/20220204/20220204192328.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://tech.excite.co.jp/entry/2022/02/08/124910">【Java】IntelliJ IDEAで、「.var」したときに自動でfinalをつける</a></h5><div class="ui-feed-item__blog-title">エキサイト TechBlog.</div>
+<p class="ui-feed-item__summary"><a href="https://tech.excite.co.jp/entry/2022/02/08/124910">
+taanatsuです。 IntelliJ開発環境でJavaでローカル変数を作る際によく利用する「.var」。 これをしたときに変数にfinalを自動付与する設定が……新しいバージョンから消えていました。 それを復活させる方法を共有します。 IngtelliJの設定から、 Editor -&gt; Code Style -&gt; Java -&gt; Code Generation に行き、Make generat...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 03:49:10">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://blog.howtelevision.co.jp/entry/2022/02/08/120726"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yakiniku0/20220207/20220207142247.png" loading="lazy" alt="記事のアイキャッチ画像"></a>
+<h5 class="ui-feed-item__title"><a href="https://blog.howtelevision.co.jp/entry/2022/02/08/120726">Kubernetesへ移行できるSREチームになるまでにやってきたこと</a></h5><div class="ui-feed-item__blog-title">ハウテレビジョン開発者ブログ
+</div><p class="ui-feed-item__summary"><a href="https://blog.howtelevision.co.jp/entry/2022/02/08/120726">
+SREチームの肥沼(clover0)です。少し前にSREの取り組みの紹介として、Kubernetesへ移行した基盤刷新を紹介する記事を執筆させていただきました。今回は、基盤刷新を行うにあたって、チームで日々取り組んできたことを紹介します。 blog.howtelevision.co.jp SRE はじめに、SREについて簡単に説明します。 Site Reliability Engineeringの...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 03:07:26">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech.mirrativ.stream/entry/2022/02/08/120433?utm_source=feed"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/n0mimono/20220207/20220207141440.png" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://tech.mirrativ.stream/entry/2022/02/08/120433?utm_source=feed">ミラティブの開発チーム編成をアプデしたよ Feb 2022</a></h5><div 
+class="ui-feed-item__blog-title">Mirrativ Tech Blog</div><p class="ui-feed-item__summary"><a href="https://tech.mirrativ.stream/entry/2022/02/08/120433?utm_source=feed">
+みなさま、おはようございます。よこて @n0mimono です。令和になってなんと4年目に入りました。 今回はミラティブのプロダクト開発チームを更新したよ、という話をします。ついでに周辺の取り組みも紹介してみます。 前回記事はこちら tech.mirrativ.stream ちなみに今日はこの本の影響を受けています。 チームトポロジー 価値あるソフトウェアをすばやく届ける適応型組織設計作者:マシュ...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 03:04:33">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://blog.css-net.co.jp/entry/2022/02/08/110514"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/pinkie79/20220208/20220208110331.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://blog.css-net.co.jp/entry/2022/02/08/110514">会計システムの保守運用業務について —固定資産管理をご紹介—</a></h5><div class="ui-feed-item__blog-title">シー・エス・エス イノベーションラボ（ブログ）</div><p 
+class="ui-feed-item__summary"><a href="https://blog.css-net.co.jp/entry/2022/02/08/110514">
+皆さん、こんにちは。エンタープライズ・ソリューション開発部の星野と申します。 現在はシステム開発会社に常駐し、会計システムの保守運用業務に従事しています。 業界経験約30年、開発の楽しさに出会ってからたくさんの業務を経験してきました。 今回は、私の簡単な経歴と現在の業務内容についてお話しさせていただきます。 １．経歴について ２．１２年にわたって現在のプロジェクトに参画 ３．会計システムについて ...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 02:05:14">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://mixi-developers.mixi.co.jp/strongest-terraform-terragrunt-ci-e4c350d627e6?source=rss----bc6b0ae5a97c---4"><img src="https://miro.medium.com/max/956/1*RjeorYvuGsN2WEjPh-9I0w.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://mixi-developers.mixi.co.jp/strongest-terraform-terragrunt-ci-e4c350d627e6?source=rss----bc6b0ae5a97c---4">
+CloudBuild で最強のTerraform &amp; Terragrunt CI/CD環境を作る</a></h5><div class="ui-feed-item__blog-title">mixi developers - Medium</div><p class="ui-feed-item__summary"><a 
+href="https://mixi-developers.mixi.co.jp/strongest-terraform-terragrunt-ci-e4c350d627e6?source=rss----bc6b0ae5a97c---4"></a></p><div class="ui-feed-item__date" title="2022-02-08 01:42:54">4日前</div>
+</div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://caddi.tech/archives/3176"><img src="https://caddi.tech/wp-content/uploads/2020/03/OGP@2x.png" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://caddi.tech/archives/3176">製造業とソフトウェアの品質 Part 2/2</a></h5><div class="ui-feed-item__blog-title">CADDi Tech Blog</div><p 
+class="ui-feed-item__summary"><a href="https://caddi.tech/archives/3176">
+物理のモノづくりと比べたソフトウェア開発 物理的なモノだからこそ難しい事： ここまでは品質の難しさや取り組みの重要性に関して語ってきましたが、物理的なモノを扱っているからこそ発生するチャレンジを紹介します。 スケールの難 […] The post 製造業とソフトウェアの品質 Part 2/2 appeared first on CADDi Tech Blog.</a></p><div 
+class="ui-feed-item__date" title="2022-02-08 01:32:58">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://techblog.nhn-techorus.com/archives/18757"><img 
+src="https://image.techblog.nhn-techorus.com/wp-content/uploads/2020/01/OGPI_techblog_thumbnail_AWS_3.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://techblog.nhn-techorus.com/archives/18757">「AWS Hands-on for Beginners Network 編#3」を参考にクライアント VPN を Terraform で実装してみた | NHN テコラス Tech Blog</a></h5><div class="ui-feed-item__blog-title">
+AWS、機械学習、IoTなどの技術ブログ</div><p class="ui-feed-item__summary"><a href="https://techblog.nhn-techorus.com/archives/18757">
+はじめに はじめまして。CloudLead チームの Cold-Airflow です。 タイトルにあるように、 AWS が公開している AWS Hands-on for Beginners の「Network 編#3 クライアント VPN ... 続きを読む 「AWS Hands-on for Beginners Network 編#3」を参考にクライアント VPN を Terraform で実装...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 01:14:31">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://engineering.mercari.com/blog/entry/20220207-mercari-shops-tech-stack-next/"><img src="https://storage.googleapis.com/prd-engineering-asset/2022/02/c6359e46-01_suguru.png" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://engineering.mercari.com/blog/entry/20220207-mercari-shops-tech-stack-next/">メルカリShops の技術スタック、その後</a></h5><div 
+class="ui-feed-item__blog-title">メルカリエンジニアリングブログ</div><p class="ui-feed-item__summary"><a href="https://engineering.mercari.com/blog/entry/20220207-mercari-shops-tech-stack-next/">
+こんにちは。ソウゾウのSoftware Engineer(CTO)の@suguruです。連載：メルカリShops 開発の裏側 Vol.2の1日目を担当させていただきます。 去年、2021年に開始した メルカリShopsの […]</a></p><div class="ui-feed-item__date" title="2022-02-08 01:00:40">4日前</div></div>
+<div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://techblog.jmdc.co.jp/entry/2022/01/08/100000"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/j/jmdtecheditor/20220207/20220207120701.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://techblog.jmdc.co.jp/entry/2022/01/08/100000">【エンジニア向け】医療データの種別を超解説</a></h5><div class="ui-feed-item__blog-title">JMDC TECH BLOG</div><p class="ui-feed-item__summary"><a 
+href="https://techblog.jmdc.co.jp/entry/2022/01/08/100000">
+JMDC開発本部データ基盤開発部の杉山です。 医療ビッグデータ事業を展開するJMDCでは、様々な医療データを取り扱い、価値創出へとつなげています。医療データと言っても、その種類や役割は実に幅広く、多岐にわたっています。 私たちは、どんな医療データを扱っているのか。今回は、その中でもJMDCのデータ事業の代名詞とも言える保険者データ（レセプトデータ等）に焦点を当てて、分かりやすく解説していきたいと思...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 01:00:00">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://blog.idcf.jp/entry/container-pv"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yichikawa_idcf/20220131/20220131210918.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://blog.idcf.jp/entry/container-pv">IDCFクラウドコンテナサービス　パーシステントボリュームの使い方・作り方</a></h5><div class="ui-feed-item__blog-title">IDCF テックブログ</div><p class="ui-feed-item__summary"><a 
+href="https://blog.idcf.jp/entry/container-pv">
+はじめまして、事業推進本部SE部の市川です。 普段はセールスエンジニアとして、IDCFクラウドなどサービスのご提案や導入支援を行っています。 今回はIDCFクラウドコンテナサービスでのパーシステントボリュームの利用方法、 さらにはNFSをパーシステントボリュームとして利用する方法をご紹介します。 www.idcf.jp</a></p><div class="ui-feed-item__date" 
+title="2022-02-08 01:00:00">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://toranoana-lab.hatenablog.com/entry/2022/02/08/100000"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/t/toranoana-lab/20220128/20220128121233.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://toranoana-lab.hatenablog.com/entry/2022/02/08/100000">Deno 1.18 へのアップデートと変更事項まとめ</a></h5><div class="ui-feed-item__blog-title">虎の穴開発室ブログ</div><p class="ui-feed-item__summary"><a 
+href="https://toranoana-lab.hatenablog.com/entry/2022/02/08/100000">
+皆さんこんにちは。おっくんです。 去る 2022 年 1 月 20 日に Deno 1.18 がリリースされました。 今回も、リリースノートを参考に 変更事項の気になるところを紹介したいと思います。 実行環境 Docker イメージ denoland/deno:centos(確認時点では Deno 1.18.0 でした) Deno 1.18 Deno 1.18 での変更事項をDeno 1.18 リ...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 01:00:00">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://techblog.cccmk.co.jp/entry/2022/02/08/093809"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/miu4930/20220207/20220207110753.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://techblog.cccmk.co.jp/entry/2022/02/08/093809">はんだ付けにチャレンジしました！</a></h5><div class="ui-feed-item__blog-title">CCCマーケティング データベースマーケティング研究所の Tech Blog</div><p
+ class="ui-feed-item__summary"><a href="https://techblog.cccmk.co.jp/entry/2022/02/08/093809">
+こんにちは、技術開発ユニットの三浦です。 特に春っぽい歌詞が入っていないのに「春っぽいなぁ」と思う歌があります。耳から入ってきた情報は、自分の中でどんな風にエンコードされているんだろう・・・と最近ふと考えることがあります。 以前から「今年ははんだ付けが出来るようになりたい！」と書いていたのですが、最近機会があってはんだ付けにチャレンジすることが出来ました。事前に本を参考に作りたいものを決め、材料を...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 00:38:09">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://engineering.mercari.com/blog/entry/20220207-8ff8aad53e/"><img src="https://storage.googleapis.com/prd-engineering-asset/2022/02/559d2dbd-benchmarking_platform_architecture-scaled.jpg" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://engineering.mercari.com/blog/entry/20220207-8ff8aad53e/">検索の応答性能を維持するための Benchmarking Automation</a></h5><div 
+class="ui-feed-item__blog-title">メルカリエンジニアリングブログ</div><p class="ui-feed-item__summary"><a href="https://engineering.mercari.com/blog/entry/20220207-8ff8aad53e/">
+※この記事は、&quot;Blog Series of Introduction of Developer Productivity Engineering at Mercari&quot; の一環で書かれています。 は […]</a></p><div class="ui-feed-item__date" title="2022-02-08 00:00:50">4日前</div></div>
+<div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://tech-blog.monotaro.com/entry/2022/02/08/090000?utm_source=feed"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/monotaro-tech-blog/20210830/20210830181902.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://tech-blog.monotaro.com/entry/2022/02/08/090000?utm_source=feed">Software Design連載 2022年1月号 運用監視の解像度アップとサービス横断的なログ基盤の整備</a></h5><div class="ui-feed-item__blog-title">MonotaRO Tech Blog
+</div><p class="ui-feed-item__summary"><a href="https://tech-blog.monotaro.com/entry/2022/02/08/090000?utm_source=feed">
+こんにちは。中山(id:yoichi22) です Software Designに連載させていただいております「Pythonモダン化計画」では、モノタロウの社内事例から読者の皆様のお役に立ちそうな取り組みを紹介させていただいています。のですが、社内でも隣のチームがやってた取り組みを記事で初めて知ることもあって、私も読者として楽しませてもらっています。隣の執筆者さんありがとうございます。 今回は、運...
+</a></p><div class="ui-feed-item__date" title="2022-02-08 00:00:00">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://zenn.dev/stafes/articles/gochikuru-phpstan"><img 
+src="https://res.cloudinary.com/zenn/image/upload/s--qECA6f9V--/co_rgb:222%2Cg_south_west%2Cl_text:notosansjp-medium.otf_37_bold:stafes%2Cx_203%2Cy_98/c_fit%2Cco_rgb:222%2Cg_north_west%2Cl_text:notosansjp-medium.otf_70_bold:PHPStan%25E3%2581%25AE%25E3%2582%25A8%25E3%2583%25A9%25E3%2583%25BC%25E3%2582%25922000%25E5%2580%258B%25E5%25BC%25B1%25E8%25A7%25A3%25E6%25B6%2588%25E3%2581%2597%25E3%2581%259F%25E9%259A%259B%25E3%2581%25AETips%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vemVubi9pbWFnZS9mZXRjaC9zLS1mdXdWNmtOMC0tL2NfbGltaXQlMkNmX2F1dG8lMkNmbF9wcm9ncmVzc2l2ZSUyQ3FfYXV0byUyQ3dfNzAvaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2EyMTk0MTRjYWQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_72/v1627274783/default/og-base_z4sxah.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://zenn.dev/stafes/articles/gochikuru-phpstan">PHPStanのエラーを2000個弱解消した際のTips</a></h5><div 
+class="ui-feed-item__blog-title">stafesさんのフィード</div><p class="ui-feed-item__summary"><a href="https://zenn.dev/stafes/articles/gochikuru-phpstan">
+こんにちは、スターフェスティバル株式会社でバックエンドエンジニアをやっている吉田あひるです。 先日、僕が関わっているプロダクトで発生していた 2000 個弱の PHPStan のエラーを一部を除きほぼ全て解消したので、その際に何に気を付けて作業をしていたのか、そして一連の作業の中でどういった恩恵を受けることができたのかを共有できればと思います。 PHPStan とは 詳しい説明は割愛しますが、...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 23:51:10">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech.excite.co.jp/entry/2022/02/08/063000"><img src="https://ogimage.blog.st-hatena.com/26006613704646990/13574176438060812068/1644269403" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://tech.excite.co.jp/entry/2022/02/08/063000">quarkusを使う(ログ出力編)</a></h5><div class="ui-feed-item__blog-title">エキサイト TechBlog.</div><p 
+class="ui-feed-item__summary"><a href="https://tech.excite.co.jp/entry/2022/02/08/063000">
+夜遅くからこんばんは。エキサイト株式会社中尾です。 quarkusの開発に慣れてきたのですが、いまいちdebug周りが見えなかったので、debugログを全部出すことにしました。 https://quarkus.io/guides/logging 詳しい設定はこちらに記載しているのですが、簡単に説明すると quarkus.log.category.&quot;*&quot;.level=DEBUG にすると全てのdeb...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 21:30:00">4日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://future-architect.github.io/articles/20220208a/"><img src="https://future-architect.github.io/images/20220208a/キャプチャ.PNG" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://future-architect.github.io/articles/20220208a/">PG BATTLE 2021 参戦記</a></h5><div class="ui-feed-item__blog-title">フューチャー技術ブログ</div><p 
+class="ui-feed-item__summary"><a href="https://future-architect.github.io/articles/20220208a/">
+&lt;h1 id=&quot;はじめに&quot;&gt;&lt;a href=&quot;#はじめに&quot; class=&quot;headerlink&quot; title=&quot;はじめに&quot;&gt;&lt;/a&gt;はじめに&lt;/h1&gt;&lt;p&gt;本記事は、2021/10/23(土)に行われた&lt;a</a></p><div 
+class="ui-feed-item__date" title="2022-02-07 15:00:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://techracho.bpsinc.jp/hachi8833/2022_02_07/115262"><img 
+src="https://techracho.bpsinc.jp/wp-content/uploads/2022/01/rails7_better_support_for_custom_enum_postgres_eyecatch-min.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://techracho.bpsinc.jp/hachi8833/2022_02_07/115262">Rails 7: PostgreSQLのカスタムenum型が使いやすくなった（翻訳）</a></h5><div class="ui-feed-item__blog-title">TechRacho</div><p class="ui-feed-item__summary">
+<a href="https://techracho.bpsinc.jp/hachi8833/2022_02_07/115262">
+概要 原著者の許諾を得て翻訳・公開いたします。 英語記事: Rails 7 adds better support for custom enum types in PostgreSQL | Saeloun Blog 原文公開日: 2022/01/12 原著者: Swaathi Kakarla サイト: blog.saeloun.com 日本語タイトルは内容に即したものにしました。 Rails 7...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 10:23:34">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://synamon.hatenablog.com/entry/event-report-sier"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/krocks96/20220206/20220206203456.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://synamon.hatenablog.com/entry/event-report-sier">【イベントレポート】SIer・業務系エンジニアのXRスタートアップ転職を語る会</a></h5><div class="ui-feed-item__blog-title">
+Synamon’s Engineer blog</div><p class="ui-feed-item__summary"><a href="https://synamon.hatenablog.com/entry/event-report-sier">
+こんにちは、エンジニアのクロックスこと黒岩(@kro96_xr)です。 今回は先日行われたSIer・業務系エンジニアのXRスタートアップ転職を語る会のイベントレポートをお届けします。 ▼アーカイブはこちら▼ www.youtube.com イベント概要 本イベントはSynamon社内のSIer出身者が各自のXR転職を振り返りつつパネルディスカッションを行うという形式で行われました。 「業務でXR開...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 10:00:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://cloudpack.media/61222"><img 
+src="https://cloudpack.media/wp-content/uploads/2021/09/ogp-insideuiux.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://cloudpack.media/61222">
+HTMLとブラウザの進化 | エンジニアブログ</a></h5><div class="ui-feed-item__blog-title">iret.media</div><p class="ui-feed-item__summary"><a href="https://cloudpack.media/61222">
+概要 近年ブラウザの進化に歩みを合わせるようにHTMLの仕様が進化し、webの表現力が大きく向上しています。 今回の記事ではHTMLとブラウザの進化の歴史を振り返りつつ、2022年のHTMLとモダンブラウザの現在地点と来 […]</a></p><div class="ui-feed-item__date" title="2022-02-07 09:00:16">5日前</div></div>
+<div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://tech.excite.co.jp/entry/2022/02/07/174804"><img 
+src="https://ogimage.blog.st-hatena.com/26006613704646990/13574176438060979647/1644223684" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://tech.excite.co.jp/entry/2022/02/07/174804">MySQLでMaterialized Viewを実現する</a></h5><div class="ui-feed-item__blog-title">エキサイト TechBlog.</div><p class="ui-feed-item__summary"><a 
+href="https://tech.excite.co.jp/entry/2022/02/07/174804">
+こんにちは。 エキサイト株式会社の三浦です。 tech.excite.co.jp 以前こちらのブログで、「MySQLにおいて、Indexだけではパフォーマンス改善に限界があり、一定以上複雑なSQLやデータ構造に対してはIndex以外の手段を講じる必要がある」ことを説明しました。 今回は、その方法の1つであるMaterialized ViewをMySQLで実現する方法を説明します。 Material...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 08:48:04">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://tech-blog.rakus.co.jp/entry/20220207/css">
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/t/tech-rakus/20220207/20220207162950.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://tech-blog.rakus.co.jp/entry/20220207/css">【CSS】 下線（アウトライン）を引く方法 | RAKUS Developers Blog</a></h5><div class="ui-feed-item__blog-title">ラクス エンジニアブログ</div><p class="ui-feed-item__summary">
+<a href="https://tech-blog.rakus.co.jp/entry/20220207/css">
+こんにちは、技術広報のyayawowoです。 Web制作をする際に、 ・このテキスト強調したいな… ・この見出しをおしゃれにできないかな？ と思うことはないでしょうか。 そこで今回は、 CSSで下線を引く方法に加え、太さや色付け、点線にする方法を解説したいと思います！ HTMLとCSSのコード例も記述しておりますので、是非ご参考ください。 CSSで下線を引く方法 ① text-decoration...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 08:30:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://tech.smarthr.jp/entry/pm-policy-2022"><img
+ src="https://cdn-ak.f.st-hatena.com/images/fotolife/a/adachipm/20220207/20220207120139.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://tech.smarthr.jp/entry/pm-policy-2022">2022年のプロダクトマネジメント方針を公開します</a></h5><div class="ui-feed-item__blog-title">SmartHR Tech Blog</div><p class="ui-feed-item__summary"><a 
+href="https://tech.smarthr.jp/entry/pm-policy-2022">
+こんにちは、プロダクトマネージャー（以下、PM）のadachiです。 SmartHRでは、年始に各部署のリーダーがその年の方針を発表することになっています。今回は私がPMグループの方針として書いた文章を、丸ごとそのまま公開したいと思います。 本文に入る前に、少しだけ補足をさせてください。 現在PMグループには13名のPMが所属しており、それぞれ担当するプロダクトの性質もフェーズも異なります。そのよ...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 08:10:11">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://developers-jp.googleblog.com/2022/02/dsa.html"><img 
+src="http://4.bp.blogspot.com/-fWEPzhrhdqk/WKbYSrN1_8I/AAAAAAAATXE/m2-ZgsirkMYKc_YhcehEb0iUdyGtLs8KACK4B/s1600/lockup_google_developers_horizontal_knockout_wht.png" loading="lazy" alt="記事のアイキャッチ画像">
+</a><h5 class="ui-feed-item__title"><a href="https://developers-jp.googleblog.com/2022/02/dsa.html">DSA ページフィードと動的リマーケティング フィードのアセットへの移行に関するお知らせ</a></h5><div class="ui-feed-item__blog-title">
+Google Developers Japan</div><p class="ui-feed-item__summary"><a href="https://developers-jp.googleblog.com/2022/02/dsa.html">
+この記事は Nick Birine による Google Ads Developer Blog の記事 &quot;Announcing DSA Page Feeds and Dynamic Remarketing Feeds are migrating to Assets&quot; を元に翻訳・加筆したものです。詳しくは元記事をご覧ください。 Google Ads API の動的検索広告（DSA）ページフィード...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 08:00:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://rheb.hatenablog.com/entry/2022/02/07/AMQP_Interconnect%E3%83%99%E3%83%BC%E3%82%B9%E3%81%A7Kubernetes%E3%81%AE%E3%83%9E%E3%83%AB%E3%83%81%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E9%96%93%E3%81%AE%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC">
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yudaiono/20220207/20220207162302.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://rheb.hatenablog.com/entry/2022/02/07/AMQP_Interconnect%E3%83%99%E3%83%BC%E3%82%B9%E3%81%A7Kubernetes%E3%81%AE%E3%83%9E%E3%83%AB%E3%83%81%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E9%96%93%E3%81%AE%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC">
+AMQP InterconnectベースでKubernetesのマルチクラスタ間のネットワークを構成するSkupperのご紹介</a></h5><div class="ui-feed-item__blog-title">赤帽エンジニアブログ</div><p class="ui-feed-item__summary"><a 
+href="https://rheb.hatenablog.com/entry/2022/02/07/AMQP_Interconnect%E3%83%99%E3%83%BC%E3%82%B9%E3%81%A7Kubernetes%E3%81%AE%E3%83%9E%E3%83%AB%E3%83%81%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E9%96%93%E3%81%AE%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC">
+みなさん、こんにちは。 Red Hatでソリューションアーキテクトをしている小野です。 ハイブリッドクラウドやマルチクラウドの環境下へKubernetesクラスタをインストールしたときに、 Kubernetesクラスタ同士を接続するネットワークをどのように構成するのか要検討ポイントとなります。 クラスタ間のネットワークを構成する方法として、以下の記事にて紹介されているSubmarinerを用いてク...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 07:56:46">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://techblog.cartaholdings.co.jp/entry/2022/02/07/163122"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/suzu_v/20220204/20220204111616.png" loading="lazy" alt="記事のアイキャッチ画像"></a>
+<h5 class="ui-feed-item__title"><a href="https://techblog.cartaholdings.co.jp/entry/2022/02/07/163122">VOYAGE GROUP TECH BLOGあらため、CARTA TECH BLOGになりました。</a></h5><div class="ui-feed-item__blog-title">
+CARTA TECH BLOG</div><p class="ui-feed-item__summary"><a href="https://techblog.cartaholdings.co.jp/entry/2022/02/07/163122">
+こんにちは！長らくVOYAGE GROUPテックブログとして続けてきた当ブログですが、冠名であるところの株式会社VOYAGE GROUPが2021年12月末をもってなくなりました・・。VOYAGE GROUPという名前にも愛着があったので寂しさもあります・・。 これからは新生CARTA HOLDINGSのテックブログ、CARTAテックブログとして生まれ変わることとなりました！どうぞよろしくお願いい...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 07:31:22">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech-blog.rakus.co.jp/entry/20220207/cordva"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/t/tech-rakus/20220204/20220204180401.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://tech-blog.rakus.co.jp/entry/20220207/cordva">【Android】0から理解する Cordova Plugin | RAKUS Developers Blog</a></h5><div class="ui-feed-item__blog-title">
+ラクス エンジニアブログ</div><p class="ui-feed-item__summary"><a href="https://tech-blog.rakus.co.jp/entry/20220207/cordva">
+はじめに こんにちは、@rs_tukkiです。 12月にラクスのAdvent CalenderでCordovaについての記事を寄稿しましたが、今回もCordovaについての話をさせていただきます。 はじめに Cordovaとは？ Cordova Pluginを自分で作ってみる Cordovaプロジェクトの作成 Pluginの定義(plugin.xml / package.json) ネイティブコー...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 06:00:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://techblog.yahoo.co.jp/entry/2022020730258033/"><img src="https://s.yimg.jp/images/tecblog/2021-H2/securitymonday/ogp_20220207T113723.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://techblog.yahoo.co.jp/entry/2022020730258033/">セキュリティ向上にまつわる技術記事まとめ</a></h5><div class="ui-feed-item__blog-title">Yahoo! JAPAN Tech Blog</div><p 
+class="ui-feed-item__summary"><a href="https://techblog.yahoo.co.jp/entry/2022020730258033/">セキュリティにまつわる技術のノウハウを、Yahoo! JAPAN Tech Blogからキュレーションしました。</a></p><div class="ui-feed-item__date" 
+title="2022-02-07 05:30:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://note.com/retail_ai/n/nde4fafb2f2fb"><img 
+src="https://assets.st-note.com/production/uploads/images/71657063/rectangle_large_type_2_c0fd70fa1f6b7bc5023de1d2d8503b63.png?fit=bounds&amp;quality=85&amp;width=1280" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://note.com/retail_ai/n/nde4fafb2f2fb">ビジュアルコンセプトとパフォーマンスを意識したCSSアニメーション技法</a></h5><div class="ui-feed-item__blog-title">
+Retail AI Tech Team</div><p class="ui-feed-item__summary"><a href="https://note.com/retail_ai/n/nde4fafb2f2fb">
+はじめまして、Retail AIグループのProduct Development Departmentでエンジニアをしている中村です。 昨年Retail AIのコーポレートサイトがリニューアルしました！ 続きをみる</a></p><div class="ui-feed-item__date" title="2022-02-07 05:11:21">5日前</div></div><div 
+class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://techblog.raccoon.ne.jp/archives/1644210525.html"><img src="https://techblog.raccoon.ne.jp/wp-content/uploads/2022/02/kawa.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://techblog.raccoon.ne.jp/archives/1644210525.html">【用語解説】プログラミングにおける「ストリーム」とは？</a></h5><div 
+class="ui-feed-item__blog-title">Raccoon Tech Blog [株式会社ラクーンホールディングス 技術戦略部ブログ]</div><p class="ui-feed-item__summary"><a href="https://techblog.raccoon.ne.jp/archives/1644210525.html">
+こんにちは。インフラ担当のいせです。 ある日、「ストリームって何ですか？」と弊社の新人から質問されました。 Webで調べてみたそうなのですが、曰く「ストリームとはデータの流れ」。う～ん、わかったようなわからないような…… … &quot;【用語解説】プログラミングにおける「ストリーム」とは？&quot; の続きを読む</a></p><div class="ui-feed-item__date" 
+title="2022-02-07 05:08:45">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://developers.10antz.co.jp/archives/2347?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=%25e3%2582%25bd%25e3%2583%25bc%25e3%2582%25b7%25e3%2583%25a3%25e3%2583%25ab%25e3%2582%25b2%25e3%2583%25bc%25e3%2583%25a0%25e9%2581%258b%25e7%2594%25a8%25e7%258f%25be%25e5%25a0%25b4%25e3%2581%25ae%25e6%25a5%25ad%25e5%258b%2599%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596">
+<img src="images/icon512-transparent.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://developers.10antz.co.jp/archives/2347?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=%25e3%2582%25bd%25e3%2583%25bc%25e3%2582%25b7%25e3%2583%25a3%25e3%2583%25ab%25e3%2582%25b2%25e3%2583%25bc%25e3%2583%25a0%25e9%2581%258b%25e7%2594%25a8%25e7%258f%25be%25e5%25a0%25b4%25e3%2581%25ae%25e6%25a5%25ad%25e5%258b%2599%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596">
+ソーシャルゲーム運用現場の業務効率化</a></h5><div class="ui-feed-item__blog-title">10ANTZ Developers Blog</div><p class="ui-feed-item__summary"><a 
+href="https://developers.10antz.co.jp/archives/2347?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=%25e3%2582%25bd%25e3%2583%25bc%25e3%2582%25b7%25e3%2583%25a3%25e3%2583%25ab%25e3%2582%25b2%25e3%2583%25bc%25e3%2583%25a0%25e9%2581%258b%25e7%2594%25a8%25e7%258f%25be%25e5%25a0%25b4%25e3%2581%25ae%25e6%25a5%25ad%25e5%258b%2599%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596">
+はじめに ソーシャルゲームの運用現場では イベント準備 既存機能の改善 新規機能の開発 お問い合わせ調査 不具合修正 などやることが多く、目の前のタスクに追われ余裕が無くなってしまうこともあるかと思います。 人間、余裕が無いと イライラする ミスが増える 他人への思いやりがなくなる 何事も余裕が無い ...</a></p><div class="ui-feed-item__date" 
+title="2022-02-07 05:07:34">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://tech.travelbook.co.jp/posts/introducing-fastly/"><img 
+src="https://tech.travelbook.co.jp/posts/introducing-fastly/cover.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://tech.travelbook.co.jp/posts/introducing-fastly/">Fastlyを導入しました！</a></h5><div class="ui-feed-item__blog-title">TravelBook Tech Blog</div><p class="ui-feed-item__summary"><a 
+href="https://tech.travelbook.co.jp/posts/introducing-fastly/">2021年11月9日、トラベルブック(www.travelbook.co.jp )ドメインに対してFastlyを適用しました。 トラベルブックでのFastlyの活用方法、設定、運用について記載します。</a></p><div 
+class="ui-feed-item__date" title="2022-02-07 04:19:15">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://engineering.mercari.com/blog/entry/20220207-mercari-shops-behind-the-scenes-vol-2/"><img src="https://storage.googleapis.com/prd-engineering-asset/2022/02/9cb1c25a-00_kv.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://engineering.mercari.com/blog/entry/20220207-mercari-shops-behind-the-scenes-vol-2/">連載：メルカリShops 開発の裏側 Vol.2</a>
+</h5><div class="ui-feed-item__blog-title">メルカリエンジニアリングブログ</div><p class="ui-feed-item__summary"><a href="https://engineering.mercari.com/blog/entry/20220207-mercari-shops-behind-the-scenes-vol-2/">
+こんにちは！ソウゾウのSoftware Engineerの@napoliです。「メルカリShops」は昨年に7月21日にプレオープンし、それから約半年が経ちました。前回は「連載：メルカリShopsプレオープンまでの開発の […]</a></p><div class="ui-feed-item__date" title="2022-02-07 04:00:21">5日前</div></div>
+<div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://developers-jp.googleblog.com/2022/02/google-ads-api-2022.html"><img 
+src="http://4.bp.blogspot.com/-fWEPzhrhdqk/WKbYSrN1_8I/AAAAAAAATXE/m2-ZgsirkMYKc_YhcehEb0iUdyGtLs8KACK4B/s1600/lockup_google_developers_horizontal_knockout_wht.png" loading="lazy" alt="記事のアイキャッチ画像">
+</a><h5 class="ui-feed-item__title"><a href="https://developers-jp.googleblog.com/2022/02/google-ads-api-2022.html">Google Ads API の 2022 年のリリースと提供終了の更新版スケジュール</a></h5><div 
+class="ui-feed-item__blog-title">Google Developers Japan</div><p class="ui-feed-item__summary"><a href="https://developers-jp.googleblog.com/2022/02/google-ads-api-2022.html">
+この記事は David Stevens による Google Ads Developer Blog の記事 &quot;Updated schedule of Google Ads API 2022 releases and sunsets&quot; を元に翻訳・加筆したものです。詳しくは元記事をご覧ください。 デベロッパーの皆さんが AdWords API から移行することをサポートするために、2022 年の ...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 04:00:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://paiza.hatenablog.com/entry/2022/02/07/130000"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/paiza/20200821/20200821130211.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://paiza.hatenablog.com/entry/2022/02/07/130000">30代・未経験でもエンジニアになれる転職活動のポイント</a></h5><div class="ui-feed-item__blog-title">paiza開発日誌</div><p 
+class="ui-feed-item__summary"><a href="https://paiza.hatenablog.com/entry/2022/02/07/130000">
+こんにちは。谷口です。最近は、新卒・第二新卒のような若手だけでなく、30代で未経験からエンジニアを目指す方が増えてきました。実際、paizaでも30代の方から「未経験だけど今からエンジニアを目指したい」「30代でもなれるものでしょうか」といったご相談を受けることはめずらしくありません。そこで今回は、30代・未経験からエンジニアを目指す場合の注意点や転職活動のポイントなどについて解説します。30代で...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 04:00:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech.connehito.com/entry/2022/02/07/124846"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/katsutomu0124/20220204/20220204153730.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5
+ class="ui-feed-item__title"><a href="https://tech.connehito.com/entry/2022/02/07/124846">Android版ママリアプリのリファクタ事情 ~ ViewState編 ~</a></h5><div class="ui-feed-item__blog-title">コネヒト開発者ブログ</div><p 
+class="ui-feed-item__summary"><a href="https://tech.connehito.com/entry/2022/02/07/124846">
+こんにちは。2017年11月にAndroidエンジニアとしてjoinした@katsutomuです。 昨年のエントリーで緑髪 -&gt; 赤髪 -&gt; 金髪と定期的なアップデートをご報告いたしましたが、今は髪が伸びて、３分の２が黒髪になってきています。 さて今回は、Android版ママリアプリのリファクタリングの事情の第二弾として、ViewState *1 導入提案時のお話を共有します。 導入背景 ママリア...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 03:48:46">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://techblog.gaudiy.com/entry/2022/02/07/124653"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/hanahanayaman/20220207/20220207120112.png" loading="lazy" alt="記事のアイキャッチ画像"></a>
+<h5 class="ui-feed-item__title"><a href="https://techblog.gaudiy.com/entry/2022/02/07/124653">エンジニアがCSチームとのコラボレーションで大切にしていること</a></h5><div class="ui-feed-item__blog-title">Gaudiy Tech Blog</div><p 
+class="ui-feed-item__summary"><a href="https://techblog.gaudiy.com/entry/2022/02/07/124653">
+こんにちは！エンタメ領域のDXを推進するブロックチェーンスタートアップ、Gaudiyでエンジニアをしている永井（@sho0910K）です。 Gaudiyではここ数ヶ月、CSチームとエンジニアチームのコラボレーションがうまく回り始めていると感じています。 GaudiyにおけるCSチームは、Gaudiyが提供するファンコミュニティでユーザーさんのサポートや体験づくりを担当しているチームです。 社内では...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 03:46:53">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://note.com/standfm_company/n/nef0dc4d946f0">
+<img src="https://assets.st-note.com/production/uploads/images/71395879/rectangle_large_type_2_5385774b69de75ecd13bc74785e63b44.png?fit=bounds&amp;quality=85&amp;width=1280" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://note.com/standfm_company/n/nef0dc4d946f0">AI platformで作ったML基盤をお手軽に監視する方法</a></h5><div class="ui-feed-item__blog-title">
+stand.fm テックブログ</div><p class="ui-feed-item__summary"><a href="https://note.com/standfm_company/n/nef0dc4d946f0">はじめに こんにちは、stand.fm でMLエンジニアをしている市村です。 続きをみる</a></p><div class="ui-feed-item__date" 
+title="2022-02-07 03:42:51">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://developers.microad.co.jp/entry/2022/02/07/120000"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nagata_yasuhiro/20220203/20220203104140.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://developers.microad.co.jp/entry/2022/02/07/120000">MySQL Shellのユーティリティをコマンドラインで実行する</a></h5><div class="ui-feed-item__blog-title">MicroAd Developers Blog</div><p 
+class="ui-feed-item__summary"><a href="https://developers.microad.co.jp/entry/2022/02/07/120000">
+はじめに インフラエンジニアの長田です。今回は、MySQL Shellで提供されている種々の便利な機能をコマンドラインで実行する方法について紹介したいと思います。 MySQL Shellとは MySQL Shellは、公式に提供されている新しいMySQLのコマンドラインクライアントで、従来の mysql クライアントと同様にSQLによるデータベースの操作に加え、JavaScriptまたはPytho...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 03:00:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://developer.so-tech.co.jp/entry/2022/02/07/120000"><img src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/158416841/1627880082864796" loading="lazy" alt="記事のアイキャッチ画像"></a><h5
+ class="ui-feed-item__title"><a href="https://developer.so-tech.co.jp/entry/2022/02/07/120000">EventBridgeを使ってAWS Batchのステータス変化をSlack通知してみた</a></h5><div class="ui-feed-item__blog-title">
+SO Technologies 開発者ブログ</div><p class="ui-feed-item__summary"><a href="https://developer.so-tech.co.jp/entry/2022/02/07/120000">
+こんにちは、ライクル事業部の石崎です。 ライクルではバッチ処理に主にAWS Batchを使用しています。 バッチの開始終了時にSlackに通知するようにしており、現状はバッチの処理に混ざって通知処理が書かれています。 通知部分だけインフラ側に任せたいと思い、EventBridgeを使った二通りの通知方法を試してみました。 既存のインフラはCDKで管理しているため、今回もCDKを使っていきます。 B...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 03:00:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://engineering.mercari.com/blog/entry/20220207-776318b784/"><img src="https://storage.googleapis.com/prd-engineering-asset/2022/02/c85dfab8-screen-shot-2022-02-07-at-10.05.25.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://engineering.mercari.com/blog/entry/20220207-776318b784/">メルカリの検索基盤の変遷について</a></h5><div 
+class="ui-feed-item__blog-title">メルカリエンジニアリングブログ</div><p class="ui-feed-item__summary"><a href="https://engineering.mercari.com/blog/entry/20220207-776318b784/">
+※この記事は、&quot;Blog Series of Introduction of Developer Productivity Engineering at Mercariの一環で書かれています。 はじめに こんに […]</a></p><div class="ui-feed-item__date" title="2022-02-07 02:59:19">5日前</div></div>
+<div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://inside.pixiv.blog/2022/02/07/113000?utm_source=feed"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/pxvpxv/20220203/20220203132922.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://inside.pixiv.blog/2022/02/07/113000?utm_source=feed">WACATE2021 冬に参加してきました #WACATE</a></h5><div class="ui-feed-item__blog-title">pixiv inside</div><p class="ui-feed-item__summary"><a 
+href="https://inside.pixiv.blog/2022/02/07/113000?utm_source=feed">
+こんにちは！クリエイター事業部 FANBOX部でエンジニアをやっているkumaです。pixivFANBOX開発とソフトウェア品質・テストに関する技術互助会「t-software-quality」活動に携わっています。 inside.pixiv.blog 2021年12月12日、 12月19日の2日間で行われたWACATE2021 冬に参加してきたので、そのレポートをお届けします。 wacate.j...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 02:30:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech.medpeer.co.jp/entry/ecr-enhanced-scanning-false-positive"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yuyakusawake/20220202/20220202113911.png" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://tech.medpeer.co.jp/entry/ecr-enhanced-scanning-false-positive">ECR拡張スキャンでRailsアプリを診断した際の脆弱性警告(偽陽性)への対策</a></h5><div 
+class="ui-feed-item__blog-title">メドピア開発者ブログ</div><p class="ui-feed-item__summary"><a href="https://tech.medpeer.co.jp/entry/ecr-enhanced-scanning-false-positive">
+Amazon ECRには、pushしたコンテナイメージへのイメージスキャン(脆弱性診断)機能があります。 この記事では、そのイメージスキャンでの【偽陽性】警告の問題と、その解決策について紹介いたします。</a></p><div class="ui-feed-item__date" title="2022-02-07 02:30:00">5日前</div></div><div 
+class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://style.biglobe.co.jp/entry/2022/02/07/110000"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yoshitomotomo/20220202/20220202121114.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://style.biglobe.co.jp/entry/2022/02/07/110000">エンジニアとして「自分が欲しいモノをつくりたい」を実現できる。ここで、“宝の山”を目指すような挑戦を</a></h5><div class="ui-feed-item__blog-title">
+TechBlog - BIGLOBE Style ｜ BIGLOBEの「はたらく人」と「トガッた技術」</div><p class="ui-feed-item__summary"><a href="https://style.biglobe.co.jp/entry/2022/02/07/110000">
+「せっかく開発者でいるなら、自分が欲しくなるモノを作りたい。」そんな環境がBIGLOBEにはあると語る、新モバイルサービス「donedone（ドネドネ）」担当エンジニアのインタビューです。</a></p><div class="ui-feed-item__date" title="2022-02-07 02:00:00">5日前</div></div><div 
+class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://buildersbox.corp-sansan.com/entry/2022/02/07/110000"><img 
+src="https://cdn-ak.f.st-hatena.com/images/fotolife/H/Hiroba_a/20220204/20220204161604.jpg" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://buildersbox.corp-sansan.com/entry/2022/02/07/110000">VPoE就任のお知らせ</a></h5><div class="ui-feed-item__blog-title">Sansan Builders Blog</div><p class="ui-feed-item__summary"><a 
+href="https://buildersbox.corp-sansan.com/entry/2022/02/07/110000">
+西場正浩がVPoEに就任 Sansan Builders Blog 編集部からのお知らせです。2022年2月1日付にて、西場 正浩がVPoE（VP of Engineering）に就任しました。Sansan株式会社は「出会いからイノベーションを生み出す」をミッションとして掲げ、人と人、企業と企業の出会いから、新たな価値を生み出していただくためのマルチプロダクトへと事業領域を拡大しています。マルチプ...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 02:00:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://tech.speee.jp/entry/2022/02/07/105539">
+<img src="https://ogimage.blog.st-hatena.com/6653586347153657344/13574176438059018770/1644198939" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://tech.speee.jp/entry/2022/02/07/105539">情報処理学会会誌『情報処理』に「Apache ArrowによるRubyのデータ処理対応の可能性」というタイトルで論文を寄稿しました</a></h5><div class="ui-feed-item__blog-title">Speee DEVELOPER BLOG</div><p 
+class="ui-feed-item__summary"><a href="https://tech.speee.jp/entry/2022/02/07/105539">
+開発部 R&amp;D ユニットで OSS を開発している村田です。GitHub のアカウントは @mrkn です。今回は情報処理学会に寄稿した次の論文の経緯と内容について簡単に紹介します。 www.ipsj.or.jp Speee には、社員の OSS 開発を促進する取り組みとして、株式会社クリアコードの須藤さんにアドバイスをいただいたり、須藤さんと一緒に OSS の開発をしたりできる福利厚生があります...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 01:55:39">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://zenn.dev/stafes/articles/ecs-task-ec2-to-fargate"><img 
+src="https://res.cloudinary.com/zenn/image/upload/s--r0cH0Tmm--/co_rgb:222%2Cg_south_west%2Cl_text:notosansjp-medium.otf_37_bold:stafes%2Cx_203%2Cy_98/c_fit%2Cco_rgb:222%2Cg_north_west%2Cl_text:notosansjp-medium.otf_70_bold:Amazon%2520ECS%2520on%2520EC2%25E3%2581%25AETask%25E3%2582%2592Fargate%25E3%2581%25AB%25E7%25A7%25BB%25E8%25A1%258C%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vemVubi9pbWFnZS9mZXRjaC9zLS1mdXdWNmtOMC0tL2NfbGltaXQlMkNmX2F1dG8lMkNmbF9wcm9ncmVzc2l2ZSUyQ3FfYXV0byUyQ3dfNzAvaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2EyMTk0MTRjYWQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_72/v1627274783/default/og-base_z4sxah.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://zenn.dev/stafes/articles/ecs-task-ec2-to-fargate">Amazon ECS on EC2のTaskをFargateに移行する</a></h5><div 
+class="ui-feed-item__blog-title">stafesさんのフィード</div><p class="ui-feed-item__summary"><a href="https://zenn.dev/stafes/articles/ecs-task-ec2-to-fargate">
+こんにちは、スターフェスティバル エンジニアのsoriです。 今回は、AWS ECS上で構築してある、定時batch処理を行うClusterのScheduled Task（日本語ではタスクのスケジューリングと書いてありますね）の処理を、EC2起動タイプからFargate起動タイプへ移行したことについて、対応した内容とトラブル解決についてお話します。 前提 そもそも、なぜEC2からFargate...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 01:46:29">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://blog.colopl.dev/entry/2022/02/07/104458">
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/e/en001/20220126/20220126185855.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://blog.colopl.dev/entry/2022/02/07/104458">長期間の運用でもレスポンスタイムを悪化させないマスターデータ管理方法</a></h5><div class="ui-feed-item__blog-title">COLOPL Tech Blog</div><p class="ui-feed-item__summary"><a 
+href="https://blog.colopl.dev/entry/2022/02/07/104458">
+はじめに コロプラには長期間運用しているゲームタイトルが複数存在します。 何も対策を行わないと長期運用タイトルではマスターデータの量が多くなり、次第にレスポンスタイムが悪化していきます。 その上コロプラではなるべくノーメンテナンスで運用するポリシーを持っているため、随時更新され続けていくマスターデータの管理には工夫が必要です。（ノーメンテナンスで運用するノウハウなどについては別の記事で紹介させてい...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 01:44:58">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://blog.zaim.co.jp/n/n1e02aa4aa629"><img 
+src="images/icon512-transparent.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://blog.zaim.co.jp/n/n1e02aa4aa629">コーディング規約を定めて SQL の可読性を上げる</a></h5><div 
+class="ui-feed-item__blog-title">Zaim スタッフの頭の中</div><p class="ui-feed-item__summary"><a href="https://blog.zaim.co.jp/n/n1e02aa4aa629">
+Zaim データ分析チームの濱口です。 現在、データ分析チームで運用している SQL のコーディング規約について紹介します。 コーディング規約を定める理由 続きをみる</a></p><div class="ui-feed-item__date" title="2022-02-07 01:19:38">5日前</div></div><div class="ui-feed-item"><a 
+class="ui-feed-item__ogp-image" href="https://caddi.tech/archives/3237"><img src="https://caddi.tech/wp-content/uploads/2022/02/batch_2-1024x573.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://caddi.tech/archives/3237">【イベント登壇レポ】VPoEハック最前線 〜エンジニア組織の現在〜</a></h5><div class="ui-feed-item__blog-title">CADDi Tech Blog</div><p 
+class="ui-feed-item__summary"><a href="https://caddi.tech/archives/3237">
+キャディでエンジニア採用を担当しております片渕です。 今回は2022年1月26日に開催されたMIDAS TECH STUDYに登壇させていただきました、AI LabのMLEテックリードの河合（@vaaaaanquish） […] The post 【イベント登壇レポ】VPoEハック最前線 〜エンジニア組織の現在〜 appeared first on CADDi Tech Blog.</a></p>
+<div class="ui-feed-item__date" title="2022-02-07 01:05:38">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://engineering.mercari.com/blog/entry/20220129-368d0842e6/"><img src="https://storage.googleapis.com/prd-engineering-asset/2021/12/54050644-1148236bb47e65d4a8e4ec60b83af1d8-1.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://engineering.mercari.com/blog/entry/20220129-368d0842e6/">
+Kubernetes Casual Talk 〜Ubie、CA、メルペイ各社のCI/CD事情〜 を開催しました！ #kubernetes_casualtalk</a></h5><div class="ui-feed-item__blog-title">メルカリエンジニアリングブログ</div><p class="ui-feed-item__summary"><a 
+href="https://engineering.mercari.com/blog/entry/20220129-368d0842e6/">2021年12月7日に、『Kubernetes Casual Talk 〜Ubie、CA、メルペイ各社のCI/CD事情〜』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくはY […]</a></p><div 
+class="ui-feed-item__date" title="2022-02-07 01:00:38">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://tech.studyplus.co.jp/entry/2022/02/07/100000"><img 
+src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/113337225/1524735869490675" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://tech.studyplus.co.jp/entry/2022/02/07/100000">Studyplus iOS/Androidでお試し期間のあるサブスクリプション販売始めました</a></h5><div class="ui-feed-item__blog-title">Studyplus Engineering Blog</div><p 
+class="ui-feed-item__summary"><a href="https://tech.studyplus.co.jp/entry/2022/02/07/100000">
+こんにちは、モバイルクライアントグループの明渡です。 2年近く前にStudyplus iOS版のサブスクリプションを実装した際、Appleの課金テスト用Sandboxアカウントが扱いづらかったのですが、iOS 14から改善されていたことを最近知りました。 途中解約ができるようになったうえ、反映に時間がかかるもののお試し資格のリセットまで可能になっており、アプリ開発者に優しくなったのだなと感動しまし...
+</a></p><div class="ui-feed-item__date" title="2022-02-07 01:00:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://toranoana-lab.hatenablog.com/entry/2022/02/07/100000"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/t/toranoana-lab/20210915/20210915152353.jpg" loading="lazy" 
+alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://toranoana-lab.hatenablog.com/entry/2022/02/07/100000">【UX改善にオススメ！】「はじめてのUXリサーチ ユーザーとともに価値あるサービスを作り続けるために」を読んだ感想</a></h5><div 
+class="ui-feed-item__blog-title">虎の穴開発室ブログ</div><p class="ui-feed-item__summary"><a href="https://toranoana-lab.hatenablog.com/entry/2022/02/07/100000">
+こんにちは！ 虎の穴ラボのS.Sです。 サービスを通じてより良いユーザー体験を提供するためにUX（User eXperience）が重要視されています。 今回は、UXを向上するために必要なUXリサーチに関する本を購読しましたので、ご紹介いたします。</a></p><div class="ui-feed-item__date" title="2022-02-07 01:00:00">5日前
+</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://aimstogeek.hatenablog.com/entry/2022/02/07/080000"><img 
+src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/108775129/1519382884135717" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://aimstogeek.hatenablog.com/entry/2022/02/07/080000">リモートワーク期間に転職して助かったこと＆ちょっと困ったので改善したこと</a></h5><div class="ui-feed-item__blog-title">株式会社クイックのWebサービス開発blog</div><p 
+class="ui-feed-item__summary"><a href="https://aimstogeek.hatenablog.com/entry/2022/02/07/080000">
+こんにちは！ クイックに転職して早１年半が経ちました。ソフトウェアエンジニアのたろーです！ 私がクイックに入社した2020年の6月は第１回目の緊急事態宣言直後。 我らがWeb室はリモートワークでの勤務体制となっていました。 もともと前職で請負開発や常駐エンジニアとして多くの企業様の文化風土に触れ、様々な開発体制の中でお仕事させていただく機会は多かったので環境の変化には慣れているつもりでしたが、 そ...
+</a></p><div class="ui-feed-item__date" title="2022-02-06 23:00:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://tech.isid.co.jp/entry/2022/02/07/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%82%92%E8%A8%AD%E8%A8%88%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%AE%E6%8E%A8%E5%A5%A8%E4%BA%8B%E9%A0%85">
+<img src="https://ogimage.blog.st-hatena.com/13574176438021458113/13574176438058958811/1644188404" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://tech.isid.co.jp/entry/2022/02/07/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%82%92%E8%A8%AD%E8%A8%88%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%AE%E6%8E%A8%E5%A5%A8%E4%BA%8B%E9%A0%85">
+コンテナイメージを設計する際の推奨事項</a></h5><div class="ui-feed-item__blog-title">電通国際情報サービス TechBlog</div><p class="ui-feed-item__summary"><a 
+href="https://tech.isid.co.jp/entry/2022/02/07/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%82%92%E8%A8%AD%E8%A8%88%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%AE%E6%8E%A8%E5%A5%A8%E4%BA%8B%E9%A0%85">
+こんにちは。XI本部クラウドイノベーションセンターの柴田です。 最近ではアプリケーションを実行する手段としてコンテナ技術が広く用いられています。 しかし、本番環境で稼働できる品質のコンテナイメージを作る際、初学者がコンテナ設計の段階で見落としがちなポイントがいくつかあります。 そこで今回はコンテナイメージを設計する際の推奨事項をいくつかご紹介したいと思います。 コンテナとは コンテナイメージを設計...
+</a></p><div class="ui-feed-item__date" title="2022-02-06 23:00:00">5日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://future-architect.github.io/articles/20220207a/"><img src="https://future-architect.github.io/images/20220207a/スクリーンショット_2022-02-03_0.14.44.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 
+class="ui-feed-item__title"><a href="https://future-architect.github.io/articles/20220207a/">オンライン勉強会の発表順を決めるサービスを作ってみた</a></h5><div class="ui-feed-item__blog-title">フューチャー技術ブログ</div><p 
+class="ui-feed-item__summary"><a href="https://future-architect.github.io/articles/20220207a/">
+&lt;img src=&quot;/images/20220207a/スクリーンショット_2022-02-03_0.14.44.png&quot; alt=&quot;サービスイメージ&quot; width=&quot;1200&quot; height=&quot;678&quot;</a></p><div class="ui-feed-item__date" 
+title="2022-02-06 15:00:00">6日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" href="https://zenn.dev/dokokade/articles/7235d32bd92f01"><img 
+src="https://res.cloudinary.com/zenn/image/upload/s--pxMGJ6o3--/co_rgb:222%2Cg_south_west%2Cl_text:notosansjp-medium.otf_37_bold:Dokokade%2Cx_203%2Cy_98/c_fit%2Cco_rgb:222%2Cg_north_west%2Cl_text:notosansjp-medium.otf_80_bold:go%252Fgin%25E3%2581%25A7%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A5%25E3%2581%2599%25E3%2582%258B%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vemVubi9pbWFnZS9mZXRjaC9zLS1fUzhjMC1GLS0tL2NfbGltaXQlMkNmX2F1dG8lMkNmbF9wcm9ncmVzc2l2ZSUyQ3FfYXV0byUyQ3dfNzAvaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzhmOTJkNWI2ZDkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_72/v1627274783/default/og-base_z4sxah.png" 
+loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a href="https://zenn.dev/dokokade/articles/7235d32bd92f01">go/ginでキャッシュするテスツ</a></h5><div class="ui-feed-item__blog-title">
+Dokokadeさんのフィード</div><p class="ui-feed-item__summary"><a href="https://zenn.dev/dokokade/articles/7235d32bd92f01">
+いろんなところからRSSフィードを取りまくっていたら、毎度取得しにいって、他サイト多サイト多彩にアクセスしにいって、表示は遅いわ他者に迷惑かけるわで失礼極まりないWebサイツの出来上がりです。このまま生き恥晒していていかがなものか。そう自問自答する日々でした。 cacheを使おう そうです。大抵どの言語でもキャッシュとあわせて検索すればきっと便利なパッケージが僕らを待っている。で、ググってみま...
+</a></p><div class="ui-feed-item__date" title="2022-02-06 13:35:13">6日前</div></div><div class="ui-feed-item"><a class="ui-feed-item__ogp-image" 
+href="https://rheb.hatenablog.com/entry/2022/02/06/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E5%B0%8E%E5%85%A5%E3%81%AE%E6%88%90%E5%8A%9F%E8%A6%81%E5%9B%A0%E3%81%AF%E8%87%AA%E5%B7%B1%E5%AE%8C%E7%B5%90%E5%9E%8B%E3%81%AE%E9%81%8B%E7%94%A8%E4%BD%93%E5%88%B6">
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/shkitayama/20220205/20220205234829.png" loading="lazy" alt="記事のアイキャッチ画像"></a><h5 class="ui-feed-item__title"><a 
+href="https://rheb.hatenablog.com/entry/2022/02/06/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E5%B0%8E%E5%85%A5%E3%81%AE%E6%88%90%E5%8A%9F%E8%A6%81%E5%9B%A0%E3%81%AF%E8%87%AA%E5%B7%B1%E5%AE%8C%E7%B5%90%E5%9E%8B%E3%81%AE%E9%81%8B%E7%94%A8%E4%BD%93%E5%88%B6">
+コンテナ導入の成功要因は自己完結型の運用体制</a></h5><div class="ui-feed-item__blog-title">赤帽エンジニアブログ</div><p class="ui-feed-item__summary"><a 
+href="https://rheb.hatenablog.com/entry/2022/02/06/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E5%B0%8E%E5%85%A5%E3%81%AE%E6%88%90%E5%8A%9F%E8%A6%81%E5%9B%A0%E3%81%AF%E8%87%AA%E5%B7%B1%E5%AE%8C%E7%B5%90%E5%9E%8B%E3%81%AE%E9%81%8B%E7%94%A8%E4%BD%93%E5%88%B6">
+OpenShift Commons Gathering Japan 2021のキーノートを振り返りながら、コンテナ導入の成功要因に迫ります！</a></p><div class="ui-feed-item__date" title="2022-02-06 12:00:00">6日前</div></div></div></div></section></main><footer 
+role="contentinfo" class="ui-section-footer"><div class="ui-layout-container"><div class="ui-section-footer__layout ui-layout-flex"><p class="ui-section-footer--copyright ui-text-note"><a 
+class="ui-text-note" href="https://github.com/yamadashy/"><small>@yamadashy</small></a></p><a href="https://github.com/yamadashy/tech-blog-rss-feed/" role="link" aria-label="#" class="ui-text-note">
+<small>GitHub</small></a></div></div></footer><script>
+const elemCopyButtons=document.querySelectorAll(".feed-url-copy-button");elemCopyButtons.forEach((e=>{e.addEventListener("click",(()=>{const t=e.parentElement.querySelector("input");navigator.clipboard?navigator.clipboard.writeText(t.value):(t.select(),document.execCommand("copy")),e.classList.add("active"),e.innerHTML="コピーしました！",window.setTimeout((()=>{e.innerHTML="コピー",e.classList.remove("active")}),1e3)}))}))
+</script></body></html>
